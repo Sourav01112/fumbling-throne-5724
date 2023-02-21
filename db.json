@@ -1,21 +1,21 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-
-  "Products": [
-    {
-      "id": 1,
-      "title": "XYZ",
-      "price": 1230,
-      "description" : "djawhdjkenfdj,enfk,nekngfewsfgv",
-      "images" : "dfdsfgg"
-    }
-  ]
-
+    "posts": [
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+      }
+    ],
   
-}
+    "Products": [
+      {
+        "id": 1,
+        "title": "XYZ",
+        "price": 1230,
+        "description" : "djawhdjkenfdj,enfk,nekngfewsfgv",
+        "images" : "dfdsfgg"
+      }
+    ]
+  
+    
+  }
