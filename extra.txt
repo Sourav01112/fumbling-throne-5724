@@ -1,0 +1,100 @@
+ <div id="Small_Img">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieChairCOSOSSS23_3D?$web_pdp_main_carousel_thumb_med$"
+                alt="">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieChairCO3QSSS23_3D?$web_pdp_main_carousel_thumb_med$"
+                alt="">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieChairCOSDSSS23_3D?$web_pdp_main_carousel_thumb_med$"
+                alt="">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieChairCO3QBSSS23_3D?$web_pdp_main_carousel_thumb_med$"
+                alt="">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieDaybedCOAVSSS23_3D?$web_pdp_main_carousel_thumb_med$"
+                alt="">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOAVSSS23_3D?$web_pdp_main_carousel_thumb_med$"
+                alt="">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOAV2SSS23_3D?$web_pdp_main_carousel_thumb_med$"
+                alt="">
+        </div>
+
+
+        <div id="Big-Img">
+            <img src="https://cb.scene7.com/is/image/Crate/PetrieChairCOSOSSS23_3D/$web_pdp_main_carousel_med$/230127143453/petrie-velvet-mid-century-chair.jpg"
+                alt="">
+        </div>
+
+
+
+        <div id="content">
+            <!-- append here -->
+
+            <h1>${element.name}</h1>
+
+            <p id="Sku">SKU: 414500</p>
+            <!-- append here -->
+
+            <p id="priceSKU">${element.price}</p>
+
+
+
+            <p id="crate">CRATE & BARREL EXCLUSIVE</p>
+            <div class="box">
+                <p>SEE WHAT'S AVAILABLE SOONEST</p>
+            </div>
+            <a href="#" id="onDIsp">ON DISPLAY IM MY STORE?</a>
+
+            <div id="borderBottom"></div>
+
+            <div class="numberOne">
+                <div class="PBox">
+                    <p>1</p>
+                </div>
+                <p>Fabric </p>
+                <p>+</p>
+            </div>
+
+            <div id="borderBottom"></div>
+
+            <div class="numberOne">
+                <div class="PBox">
+                    <p>2</p>
+                </div>
+                <p>Leg </p>
+                <p>+</p>
+            </div>
+
+            <div id="borderBottom"></div>
+
+            <p>SHIP IT</p>
+            <p>This item is made just for you. Anticipated delivery by late April.</p>
+            <p>ZIP Code:60540</p>
+
+            <div class="ImageCrate">
+                <div class="crateImage">
+                    <img src="https://cb.scene7.com/is/image/Crate/cb_mPDP_20230111_CBCC?&wid=200&qlt=90&op_sharpen=1"
+                        alt="">
+                </div>
+
+                <div id="crateContent">
+                    <u> <span style="font-weight: bold;"> Now through Feb.28:</span> <span style="color: #666666"> Zero
+                            interest if paid in full
+                            within 24 months*** on qualifying purchases.</span></u>
+                </div>
+            </div>
+
+            <!-- Buttons with quantity -->
+            <div id="quantity">
+
+                <div id="buttons">
+                    <button>&#45</button>
+                    <span>${element.quantity}</span>
+                    <button>&#43</button>
+                </div>
+
+                <div id="buttonPrice">
+                    <p>${element.price}</p>
+                </div>
+            </div>
+
+            <button id="AddTOCart">ADD TO CART</button>
+            <button id="AddTOReg">ADD TO REGISTRY</button>
+
+        </div>

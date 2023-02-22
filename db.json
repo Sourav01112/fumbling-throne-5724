@@ -1,21 +1,27 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-      }
-    ],
-  
-    "Products": [
-      {
-        "id": 1,
-        "title": "XYZ",
-        "price": 1230,
-        "description" : "djawhdjkenfdj,enfk,nekngfewsfgv",
-        "images" : "dfdsfgg"
-      }
-    ]
-  
-    
-  }
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "title": "XYZ",
+      "price": 1230,
+      "description": "djawhdjkenfdj,enfk,nekngfewsfgv",
+      "smallImages": [
+        "https://cb.scene7.com/is/image/Crate/PetrieChairCO3QSSS23_3D?$web_pdp_main_carousel_thumb_med$",
+        "https://cb.scene7.com/is/image/Crate/PetrieChairCOSDSSS23_3D?$web_pdp_main_carousel_thumb_med$",
+        "https://cb.scene7.com/is/image/Crate/PetrieChairCO3QBSSS23_3D?$web_pdp_main_carousel_thumb_med$",
+        "https://cb.scene7.com/is/image/Crate/PetrieDaybedCOAVSSS23_3D?$web_pdp_main_carousel_thumb_med$",
+        "https://cb.scene7.com/is/image/Crate/PetrieSofaCOAVSSS23_3D?$web_pdp_main_carousel_thumb_med$",
+        "https://cb.scene7.com/is/image/Crate/PetrieSofaCOAV2SSS23_3D?$web_pdp_main_carousel_thumb_med$"
+      ],
+      "images": "https://cb.scene7.com/is/image/Crate/PetrieChairCOSOSSS23_3D/$web_pdp_main_carousel_med$/230127143453/petrie-velvet-mid-century-chair.jpg",
+      "quantity": 1
+    }
+  ]
+}

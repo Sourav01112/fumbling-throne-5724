@@ -1,0 +1,157 @@
+.Big_cont {
+    display: flex;
+    margin-top: 67px;
+    padding: 20px;
+    font-family: "Crate Helvetica", "Helvetica Neue", Helvetica, Arial;
+    border: 1px solid red;
+}
+
+#Small_Img {
+
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 33px; */
+}
+
+#Small_Img img {
+    width: 62px;
+    height: 62px;
+    padding-bottom: 10px;
+    border: 1px solid red;
+
+}
+
+#Big-Img img {
+    width: 630px;
+    height: 630px;
+    margin-left: 43px;
+    border: 1px solid red;
+
+}
+
+#content {
+    width: 444px;
+    height: 1835px;
+    margin-left: 46px;
+    border: 1px solid red;
+    /* background-color: aqua; */
+}
+
+#content h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#Sku {
+    color: #666666;
+    margin-top: 7px;
+}
+
+#priceSKU {
+    margin-top: 8px;
+    font-size: large;
+    font-weight: 800;
+}
+
+#crate {
+    color: #666666;
+    margin-top: 31px;
+}
+
+.box {
+    border: 2px solid black;
+    width: 314px;
+    height: 48px;
+    padding: 0px 12px;
+    margin-bottom: 27px;
+}
+
+.box p {
+    font-size: 15px;
+    text-align: center;
+    font-size: 800;
+}
+
+
+
+#borderBottom {
+    margin-top: 43px;
+    border-top: 1px solid #666666;
+    width: 444px;
+}
+
+.numberOne {
+    /* padding-top: 43px; */
+    display: flex;
+    justify-content: space-between;
+    width: 444px;
+    /* height: 88px; */
+}
+
+.PBox {
+    border: 2px solid #666666;
+    width: 33px;
+    height: 33px;
+    margin-top: 27px;
+    text-align: start;
+    /* margin-bottom: 27px; */
+}
+
+.PBox>p {
+    text-align: center;
+}
+
+
+.ImageCrate {
+    /* border: 2px solid red; */
+    display: flex;
+    padding-bottom: 32px;
+}
+
+.crateImage {
+    margin: auto;
+
+}
+
+.crateImage img {
+    /* border: 1px solid black; */
+    width: 100px;
+    height: 47px;
+    margin-right: 50px;
+}
+
+#crateContent {
+    width: 282px;
+    line-height: 30px;
+    /* margin-left: 10px; */
+    /* margin-right: 50px; */
+}
+
+#quantity {
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttons span {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    width: 40px;
+    height: 40px;
+    margin: 4px 4px;
+}
+
+#buttons button {
+    width: 40px;
+    height: 40px;
+    background-color: #F0EFED;
+    border: none;
+    font-size: x-large;
+}
+
+#buttonPrice p {
+    font-size: large;
+    font-weight: 800;
+}
