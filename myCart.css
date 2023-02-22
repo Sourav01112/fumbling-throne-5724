@@ -3,37 +3,41 @@
     margin-top: 67px;
     padding: 20px;
     font-family: "Crate Helvetica", "Helvetica Neue", Helvetica, Arial;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #Small_Img {
 
     display: flex;
     flex-direction: column;
-    /* margin-left: 33px; */
+
 }
 
 #Small_Img img {
     width: 62px;
     height: 62px;
     padding-bottom: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
+
+/* #Big-Img{
+    position: absolute; 
+ } */
 
 #Big-Img img {
     width: 630px;
     height: 630px;
     margin-left: 43px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
 #content {
     width: 444px;
-    height: 1835px;
+    /* height: 1835px; */
     margin-left: 46px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* background-color: aqua; */
 }
 
@@ -155,3 +159,268 @@
     font-size: large;
     font-weight: 800;
 }
+
+#largeButtons button {
+    width: 444px;
+    height: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#largeButtons button:nth-child(1) {
+    color: white;
+    background-color: black;
+}
+#largeButtons button:nth-child(3) {
+    margin-bottom: 50px;
+    background-color: #f0efed;
+    border: none;
+}
+
+
+
+/* Pop-up Add to Cart */
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 500ms ease-in-out;
+    border: 1px solid black;
+    z-index: 10;
+    background-color: white;
+    /* width: 500px; */
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    width: 940px;
+    /* border: 2px solid red; */
+    height: 538px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+#flex {
+    display: flex;
+}
+
+#image {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+img {
+    width: 350px;
+}
+
+#AcceptTerm {
+    /* border: 2px solid black; */
+    width: 440px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+#AcceptTerm button {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+#AcceptTerm button:nth-child(3) {
+    color: white;
+    background-color: black;
+}
+
+.confirm {
+    padding-left: 50px;
+}
+
+
+/* Pop-up Add to Cart ENDS */
+
+.extraInfo button {
+    width: 444px;
+    height: 70px;
+    margin-bottom: 10px;
+   background-color: #f0efed;
+   border: none;
+}
+
+/* Carousel of sofas */
+
+
+/* SHREEKANT */
+
+
+.parent {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    align-items: center;
+    width: 100%;
+    /* margin: auto; */
+    margin-top: -40px;
+    /* border: 2px solid green; */
+
+}
+
+.outer {
+    height: 455px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 120px;
+    background-color: white;
+}
+
+.outer>p {
+    padding-left: 20px;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+#leftarrow button {
+    border-radius: 55%;
+    border-width: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#rightarrow button {
+    border-radius: 55%;
+    border-width: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.child {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 340px;
+    margin-top: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* background-color: rgb(241, 240, 240); */
+    display: none;
+    padding-top: 0;
+    transition: 0.5s;
+
+}
+
+.child:hover {
+    cursor: pointer;
+    transform: translate(2px, -5px);
+
+}
+
+.child p {
+    margin-top: -5 px;
+    padding-left: 15px;
+
+}
+
+#commonClass {
+    padding-left: 80px;
+    color: #999;
+}
+
+#commonClass1 {
+    padding-left: 40px;
+    color: #999;
+}
+
+.child p:nth-child(2) {
+    line-height: 5px;
+}
+
+.child img {
+    width: 100%;
+    height: 230px;
+}
+
+.child button {
+    margin-left: 15px;
+    background-color: aliceblue;
+    color: #29B6F6;
+    border: 1px solid #29B6F6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#leftarrow {
+    margin-left: 12px;
+    width: 3%;
+    display: inline-block;
+}
+
+#rightarrow {
+    margin-right: 12px;
+    width: 3%;
+    display: inline-block;
+}
+
+#leftarrow button,
+#rightarrow button {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 35px;
+}
+
+
+/* SHREEKANT enDS */
