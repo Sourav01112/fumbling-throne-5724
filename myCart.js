@@ -6,13 +6,14 @@ window.addEventListener("load", () => {
     fetchAndRenderBigImages()
     fetchAndRenderContent()
 })
+let globalArr = []
 
 // --------------SMALL Images --------------->>
 let smallImageSection = document.querySelector("#Small_Img")
 
 async function fetchAndRenderSmallImages(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/1/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/3/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
 
         renderSmallImagesSection(data.smallImages)
@@ -44,7 +45,7 @@ let BigImageSection = document.querySelector("#Big-Img")
 
 async function fetchAndRenderBigImages(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/1/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/3/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
 
         // console.log(data)
@@ -73,20 +74,16 @@ function BigImage(imageUrl) {
 
 let ContentSection = document.querySelector("#content")
 
-async function fetchAndRenderContent(queryParamString = null) {
+async function fetchAndRenderContent() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/1/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/3`)
         let data = await resp.json()
-        console.log(data)
+        // console.log(data)
+        globalArr = data
+        console.log(globalArr)
+        renderContentSection(data.title, data.price, data.images)
 
-        // let productData = data.map((item) => ({
-        //     imageUrl: item.images,
-        //     name: item.title,
-        //     price: item.price,
-        //     quantity: item.quantity
-        // }))
-        // renderContentSection(productData)
-        renderContentSection(data.title, data.images, data.price, data.quantity)
+
 
     } catch (error) {
         console.log(error)
@@ -96,13 +93,13 @@ async function fetchAndRenderContent(queryParamString = null) {
 
 
 
-function renderContentSection(cardsData) {
+function renderContentSection(title, price, images) {
     // console.log(cardsData)
-    let cardSection = `${getContent(cardsData)} `;
+    let cardSection = `${getContent(title, price, images)} `;
 
     ContentSection.innerHTML = cardSection
 
-    let cartArr = JSON.parse(sessionStorage.getItem("cart")) || []
+
 
     //! <--------------Add to Cart Pop-up JAVSCRIPT------------->
 
@@ -152,12 +149,14 @@ function renderContentSection(cardsData) {
 
     let addtocart = document.querySelector("#AddToLocalStorage")
 
+    let cartArr = JSON.parse(localStorage.getItem("cart")) || []
+
     addtocart.addEventListener("click", (element) => {
         if (checkDuplicate(element)) {
             alert("Product Already In The Cart")
         } else {
-            cartArr.push({ ...element, quantity: 1 })
-            sessionStorage.setItem("cart", JSON.stringify(cardsData))
+            // globalArr.push({ ...element, quantity: 1 })
+            localStorage.setItem("cart", JSON.stringify(globalArr))
             // add here next page redirection for vishal
             alert("Product Has Successfully Been Added")
         }
@@ -174,7 +173,7 @@ function renderContentSection(cardsData) {
     }
 
 
-// * <div> Hide - show function
+    // * <div> Hide - show function
 
     let xtrabutton = document.getElementById("xtra")
 
@@ -192,6 +191,23 @@ function renderContentSection(cardsData) {
             element.setAttribute("hidden", "hidden");
             xtrabutton.innerText = `DETAILS`;
         }
+    })
+
+    // Quantity Increment or Decrement button Function
+
+    let incrementBTN = document.getElementById("incr")
+    incrementBTN.addEventListener("click", (element) => {
+        element.quantity++
+        console.log(element.quantity)
+        localStorage.setItem("cart", JSON.stringify(globalArr))
+    })
+
+
+    let decrementBTN = document.getElementById("decr")
+    decrementBTN.addEventListener("click", (element) => {
+        element.quantity--
+        console.log(element.quantity)
+        localStorage.setItem("cart", JSON.stringify(globalArr))
     })
 
 
@@ -244,9 +260,9 @@ function getContent(title, price, images, quantity) {
             <div id="quantity">
 
                 <div id="buttons">
-                    <button>&#45</button>
+                    <button id="decr">&#45</button>
                     <span>${quantity}</span>
-                    <button>&#43</button>
+                    <button id="incr">&#43</button>
                 </div>
 
                 <div id="buttonPrice">

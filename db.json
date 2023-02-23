@@ -29,7 +29,7 @@
         "https://cb.scene7.com/is/image/Crate/PetrieSofaCOAV2SSS23_3D?$web_pdp_main_carousel_thumb_med$"
       ],
       "images": "https://cb.scene7.com/is/image/Crate/PetrieChairCOSOSSS23_3D/$web_pdp_main_carousel_med$/230127143453/petrie-velvet-mid-century-chair.jpg",
-      "quantity": 1
+      "quantity": "1"
     },
     {
       "id": 2,
@@ -52,7 +52,7 @@
         "https://cb.scene7.com/is/image/Crate/PoseNatLthrChair3QBSSS23?$web_pdp_main_carousel_thumb_med$"
       ],
       "images": "https://cb.scene7.com/is/image/Crate/PoseNatLthrChairSOSSS23/$web_pdp_main_carousel_med$/230123100251/pose-leather-chair--natural.jpg",
-      "quantity": 1
+      "quantity": "1"
     },
     {
       "id": 3,
@@ -74,8 +74,7 @@
 
         "https://cb.scene7.com/is/image/Crate/AmbieAccentChairAVSSS23?$web_pdp_main_carousel_thumb_med$"
       ],
-      "images": "https://cb.scene7.com/is/image/Crate/AmbieAccentChairSOSSS23/$web_pdp_main_carousel_med$/221006170251/ambie-walnut-wood-accent-chair-by-jake-arnold.jpg",
-      "quantity": 1
+      "images": "https://cb.scene7.com/is/image/Crate/AmbieAccentChairSOSSS23/$web_pdp_main_carousel_med$/221006170251/ambie-walnut-wood-accent-chair-by-jake-arnold.jpg"
     },
     {
       "id": 4,
