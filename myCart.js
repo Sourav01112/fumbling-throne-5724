@@ -12,39 +12,26 @@ let smallImageSection = document.querySelector("#Small_Img")
 
 async function fetchAndRenderSmallImages(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/7/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
-        let productData = data.map((item) => ({
-            SmallImageUrl: item.smallImages,
-        }))
-        renderSmallImagesSection(productData)
 
+        renderSmallImagesSection(data.smallImages)
     } catch (error) {
         console.log(error)
     }
 }
 
 function renderSmallImagesSection(cardsData) {
+    // console.log(cardsData)
     let cardSection = `
- ${cardsData.map((item) => smallImages(item.SmallImageUrl)).join("")}`;
+ ${cardsData.map((item) => smallImages(item)).join("")}`;
     smallImageSection.innerHTML = cardSection
+
 }
 
 function smallImages(SmallImageUrl) {
     return `
-            <img src="${SmallImageUrl[0]}"
-                alt="">
-            <img src="${SmallImageUrl[1]}"
-                alt="">
-            <img src="${SmallImageUrl[2]}"
-                alt="">
-            <img src="${SmallImageUrl[3]}"
-                alt="">
-            <img src="${SmallImageUrl[4]}"
-                alt="">
-            <img src="${SmallImageUrl[5]}"
-                alt="">
-            <img src="${SmallImageUrl[6]}"
+            <img class="slides" src="${SmallImageUrl}"
                 alt="">
     `
 }
@@ -57,12 +44,11 @@ let BigImageSection = document.querySelector("#Big-Img")
 
 async function fetchAndRenderBigImages(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/7/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
-        let productData = data.map((item) => ({
-            imageUrl: item.images,
-        }))
-        renderBIGImageSection(productData)
+
+        // console.log(data)
+        renderBIGImageSection(data.images)
 
     } catch (error) {
         console.log(error)
@@ -70,14 +56,15 @@ async function fetchAndRenderBigImages(queryParamString = null) {
 }
 
 function renderBIGImageSection(cardsData) {
+    // console.log(cardsData)
     let cardSection = `
- ${cardsData.map((item) => BigImage(item.imageUrl)).join("")}`;
+ ${BigImage(cardsData)}`;
     BigImageSection.innerHTML = cardSection
+
 }
 
-
 function BigImage(imageUrl) {
-    return ` <img src="${imageUrl}"alt="">`
+    return `  <img src="${imageUrl}"alt="">`
 }
 
 // --------------BIG Image Function ENDS--------------->>
@@ -88,25 +75,30 @@ let ContentSection = document.querySelector("#content")
 
 async function fetchAndRenderContent(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/7/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
-        let productData = data.map((item) => ({
-            imageUrl: item.images,
-            name: item.title,
-            price: item.price,
-            quantity: item.quantity
-        }))
-        renderContentSection(productData)
+        console.log(data)
+        // let productData = data.map((item) => ({
+        //     imageUrl: item.images,
+        //     name: item.title,
+        //     price: item.price,
+        //     quantity: item.quantity
+        // }))
+        // renderContentSection(productData)
+        renderContentSection(data.title, data.images, data.price, data.quantity)
 
     } catch (error) {
         console.log(error)
     }
 }
+// 
+
 
 
 function renderContentSection(cardsData) {
-    let cardSection = `
-<div> ${cardsData.map((item) => getContent(item.imageUrl, item.name, item.price, item.quantity)).join("")}</div>`;
+    // console.log(cardsData)
+    let cardSection = `${getContent(cardsData)} `;
+
     ContentSection.innerHTML = cardSection
 
     let cartArr = JSON.parse(sessionStorage.getItem("cart")) || []
@@ -180,11 +172,36 @@ function renderContentSection(cardsData) {
         return false
     }
 
+
+let xtrabutton = document.getElementById("xtra")
+
+    //  let toggle = button => {
+
+    xtrabutton.addEventListener("click", ()=>{
+
+        let element = document.getElementById("mydiv");
+        let hidden = element.getAttribute("hidden");
+    
+        if (hidden) {
+           element.removeAttribute("hidden");
+           button.innerText = "Hide div";
+        } else {
+           element.setAttribute("hidden", "hidden");
+           button.innerText = "Show div";
+        }
+    })
+    
+
+
+
+
+
+
 }
 
-function getContent(imageUrl, name, price, quantity) {
+function getContent(title, price, images, quantity) {
     return `
-            <h1>${name}</h1>
+            <h1>${title}</h1>
 
             <p id="Sku">SKU: 414500</p>
             <!-- append here -->
@@ -270,7 +287,7 @@ ${/* This is Add to cart pop up */""}
     </div>
     <div id="flex">
         <div id="image">
-            <img src="${imageUrl}"
+            <img src="${images}"
                 alt="error">
         </div>
         <div id="AcceptTerm">
@@ -281,8 +298,8 @@ ${/* This is Add to cart pop up */""}
                 will
                 not be added.</p>
 
-            <button id="AddToLocalStorage">ACCEPT TERMS AND ADD TO CART</button> <br>
-            <button data-close-button class="close-button">DECLINE</button>
+            <button id="AddToLocalStorage" class="hover-underline-animation2">ACCEPT TERMS AND ADD TO CART</button> <br>
+            <button data-close-button class="close-button" id="hover-underline-animation3">DECLINE</button>
         </div>
     </div>
 </div>
@@ -291,20 +308,33 @@ ${/* This is Add to cart pop up */""}
 
 ${/* Add to cart pop up ENDS here*/""}
 
+<div id="xtra" class="extraInfo">DETAIL</div>
 
-<div class="extraInfo">
-<button>DETAIL</button> <br>
-<button>REVIEWS</button><br>
-<button>DIMENSION</button><br>
-<button>CARE</button><br>
+<div id="mydiv">
+
+<p>Registartion Successful</p>
+
+<p>We will email your entry passes to the Louvre Museum in Paris. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos modi, porro, voluptas inventore corrupti vitae aliquid, minima recusandae unde doloremque eligendi impedit aperiam placeat quas consequuntur error fugiat veniam beatae. Quae, est at iure nisi inventore fugit esse autem. Corporis quia, provident quidem iste sequi saepe tempora, consequatur reiciendis, ullam consequuntur fuga ut aspernatur. Aliquam laudantium, obcaecati a inventore sint enim deserunt omnis ad perspiciatis quia, in eligendi optio esse maiores natus adipisci, quo est perferendis. Ipsum ex architecto ducimus incidunt eum delectus perferendis tempore possimus mollitia voluptas minima, deleniti similique cum veniam. Provident quidem sit magnam magni non dolores, mollitia obcaecati nobis quas unde porro, blanditiis consequatur! Illum odio sit ipsum enim quae repudiandae molestiae, nisi ratione nobis quas at dignissimos ad culpa temporibus! Corrupti aut officia magnam suscipit iste voluptates iure praesentium perferendis dignissimos maxime et quaerat, impedit nisi, repudiandae eveniet ab? Conslectus quidem nam tempora vero rerum, animi amet officiis totam dicta quia accusantium. Eius ab explicabo, molestiae nihil facere labore vitae repellendus iste error officia, at quo placeat dole nostrum dignissimos necessitatibus quisquam magnam sunt aut blanditiis. Vel consequuntur repellat fugit tempora, perferendis eligendi asperiores est. Voluptatem, asperiores? Quas impedit laboriosam perferendis sint, et consectetur accusantium iste tempore repellendus accusamus similique praesentium expedita alias dolore vero culpa, magni, itaque quia nobis. Sit eligendi eum omnis sunt, modi earum fugit cumque, ratione quas, doloremque aperiam beatae. Laudantium, soluta hic.</p>
+
 </div>
+
+
+
+
+
+
 `
 }
 
 
 // --------------Content Section Function ENDS --------------->>
 
-
+// {/* <div class="extraInfo">
+// <button>DETAIL</button> <br>
+// <button>REVIEWS</button><br>
+// <button>DIMENSION</button><br>
+// <button>CARE</button><br>
+// </div> */}
 // ?--------Carousel starts----------->
 
 function display() {
@@ -315,17 +345,13 @@ function display() {
         document.getElementById("d" + i).style.display = "inline-block";
 
     }
-    // for (let i = left2; i <= right2; i++) {
-    //     document.getElementById("e" + i).style.display = "inline-block";
 
-    // }
 }
 
 let left = 1;
 let right = 4;
 
 function moveRight() {
-    console.log("*******")
     if (left <= 4 && right <= 7) {
         document.getElementById("c" + left).style.display = "none";
         left += 1;
@@ -387,6 +413,15 @@ function moveLeft1() {
     }
 }
 
+
+// ? INDIVIDUAL cards ADD to BUTTON
+
+
+let BtnINP = document.querySelector("#indiCardBTN")
+BtnINP.addEventListener("click", (element) => {
+    cartArr.push(element)
+    sessionStorage.setItem("cart", JSON.stringify(cardsData))
+})
 
 
 

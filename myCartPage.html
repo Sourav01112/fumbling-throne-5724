@@ -2,188 +2,253 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./myCart.css">
-    <style>
-        .Big_cont {
-            display: flex;
-        }
-    </style>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4b119fb14c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./myCart.css">
+  <style>
+    .Big_cont {
+      display: flex;
+    }
+  </style>
+  <title>Document</title>
 </head>
 
 <body onload="display()">
 
-    <div>
-        <a href="">Furniture </a> &gt
-        <a href="">Living Room Furniture </a> &gt
-        <a href="">Accent Chairs</a>
-    </div>
-    <!-- <img src="./search-outline.svg" alt=""> -->
-    <div class="Big_cont">
+  
 
-        <div id="Small_Img">
-            <!-- APPEND HERE -->
-        </div>
 
-        <div id="Big-Img">
-            <!-- APPEND HERE -->
-        </div>
 
-        <div id="content">
-            <!-- APPEND HERE -->
-        </div>
-    </div>
-    <!-- Carousel Part of collection -->
+  <!-- Extra Links at the top -->
 
-    <div class="outer">
+  <div id="ExtraTOPLinks">
+    <a href="">Furniture </a> &gt
+    <a href="">Living Room Furniture </a> &gt
+    <a href="">Accent Chairs</a>
+  </div>
 
-        <div class="parent">
-            <div id="leftarrow" onclick="moveLeft()">
-                <button>&lt;</button>
-            </div>
 
-            <div class="child" id="c1">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieOttomanCOSOSSS23_3D/$web_pdp_carousel_med$/230127143456/petrie-velvet-mid-century-ottoman.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="c2">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="c3">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="c4">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="c5">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="c6">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="c7">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="c8">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div id="rightarrow" onclick="moveRight()">
-                <button>&gt;</button>
-            </div>
-        </div>
+  <div class="Big_cont">
+
+    <div id="Small_Img">
+      <!-- APPEND HERE -->
     </div>
 
-    <!-- People also VIEWED -->
-    <div class="outer">
-
-        <div class="parent">
-            <div id="leftarrow" onclick="moveLeft1()">
-                <button>&lt;</button>
-            </div>
-
-            <div class="child" id="d1">
-                <img src="https://cb.scene7.com/is/image/Crate/ValenAccentChairCvTaupeSOSSS23/$web_pdp_main_carousel_med$/221130112341/valen-swivel-accent-chair.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="d2">
-                <img src="https://cb.scene7.com/is/image/Crate/WellsLthrChairCynSOSSF20_1x1/$web_pdp_main_carousel_med$/200720144738/wells-leather-tuxedo-chair.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="d3">
-                <img src="https://cb.scene7.com/is/image/Crate/DrewSwivelChairSmlBDSOSSS22_3D/$web_pdp_main_carousel_med$/211004154256/new-family.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="d4">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="d5">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="d6">
-                <img src="https://cb.scene7.com/is/image/Crate/ValenAccentChairCvTaupeSOSSS23/$web_pdp_main_carousel_med$/221130112341/valen-swivel-accent-chair.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="d7">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div class="child" id="d8">
-                <img src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
-                    alt="">
-                <p>Petrie Velvet Mid-Century Ottoman</p>
-                <p>$999.00</p>
-                <button>ADD TO CART</button>
-            </div>
-            <div id="rightarrow" onclick="moveRight1()">
-                <button>&gt;</button>
-            </div>
-        </div>
+    <div id="Big-Img">
+      <!-- APPEND HERE -->
     </div>
 
-
-    <div>
-        <video width="100%" style="padding: 20px; border: 2px solid whitesmoke;" autoplay>
-            <source src="https://s7d5.scene7.com/is/content/Crate/Video/cb_dPLP_20230126_DesignDesk.mp4">
-        </video>
-        <!-- <source src=> -->
+    <div id="content">
+      <!-- APPEND HERE -->
     </div>
+  </div>
+
+
+  <div id="WhiteContent">
+
+      <p>Pure Shaker-style construction meets the clean-cut cool of Danish Modern in our Ojai accent chair. A modern
+        classic, the chair attends to detail in mortise-and-tenon joinery and softly turned edges. The oak frame angles
+        back the tight seat and back cushions for a comfortable sit, while the shaped armrests are contoured with a
+        rounded touch. Leather upholstery adds a touch of natural, offering a soft hand and modern matte finish.
+        Impressive on its own, we especially like our exclusive Ojai arm chairs doubled up a pair.</p> 
+      <p>
+        By choosing FSC ®-certified furniture, you are supporting responsible management of the world's forests.
+      </p> <br><br>
+    
+  </div>
+
+<div id="feedbackImage">
+  <img src="./feedbackPNG.png" alt="">
+</div>
+
+  <!-- Carousel Part of collection -->
+
+  <div class="outer">
+    <div class="marginLeft">
+      <h1>People also Viewed</h1>
+    </div>
+    <div class="parent">
+
+      
+      <div id="leftarrow" onclick="moveLeft()">
+        <button>&lt;</button>
+      </div>
+
+      <div class="child" id="c1">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieOttomanCOSOSSS23_3D/$web_pdp_carousel_med$/230127143456/petrie-velvet-mid-century-ottoman.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="c2">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="c3">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="c4">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="c5">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="c6">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="c7">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="c8">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div id="rightarrow" onclick="moveRight()">
+        <button>&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- People also VIEWED -->
+  <div class="outer">
+    <div class="marginLeft">
+      <h1>Recently Viewed</h1>
+    </div>
+    <div class="parent">
+      <div id="leftarrow" onclick="moveLeft1()">
+        <button>&lt;</button>
+      </div>
+
+      <div class="child" id="d1">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/ValenAccentChairCvTaupeSOSSS23/$web_pdp_main_carousel_med$/221130112341/valen-swivel-accent-chair.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="d2">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/WellsLthrChairCynSOSSF20_1x1/$web_pdp_main_carousel_med$/200720144738/wells-leather-tuxedo-chair.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="d3">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/DrewSwivelChairSmlBDSOSSS22_3D/$web_pdp_main_carousel_med$/211004154256/new-family.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="d4">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="d5">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="d6">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/ValenAccentChairCvTaupeSOSSS23/$web_pdp_main_carousel_med$/221130112341/valen-swivel-accent-chair.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="d7">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1">ADD TO CART</button>
+      </div>
+      <div class="child" id="d8">
+        <img
+          src="https://cb.scene7.com/is/image/Crate/PetrieSofaCOSOSSS23_3D/$web_pdp_carousel_med$/230130095245/petrie-velvet-mid-century-sofa.jpg"
+          alt="">
+        <p>Petrie Velvet Mid-Century Ottoman</p>
+        <p>$999.00</p>
+        <button id="indiCardBTN" class="hover-underline-animation1"> ADD TO CART</button>
+      </div>
+      <div id="rightarrow" onclick="moveRight1()">
+        <button>&gt;</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <video width="100%" style="padding: 20px; border: 2px solid whitesmoke;" loop autoplay>
+      <source src="https://s7d5.scene7.com/is/content/Crate/Video/cb_dPLP_20230126_DesignDesk.mp4">
+    </video>
+    <!-- <source src=> -->
+  </div>
+
+
+  <div>
+    <h2 style="margin-left: 40px;">Related Categories</h2>
+  </div>
+
+  <div  id="RelatedCategories">
+    <a class="hover-underline-animation" href="">Mid-century Modern Furniture: Shop Mid-Century Furniture</a>
+    <a class="hover-underline-animation" href="">FSC-Certified Wood Furniture: FSC Dining Tables, Sofas</a>
+    <a class="hover-underline-animation" href="">Best Cups for Coffee & Coffee Mugs for Hot Drinks</a>
+  </div>
+  <div id="RelatedCategories1">
+    <a class="hover-underline-animation" href="">Kids' Wall Art for Nurseries &amp; Children's Rooms</a>
+    <a class="hover-underline-animation" href="">Outdoor Rugs, Indoor/Outdoor Floormats &amp; Doormats</a>
+    <a class="hover-underline-animation" href="">Modern Bedroom Furniture Store: Contemporary Bed Furniture Sets</a>
+  </div>
 
 </body>
 <script src="./myCart.js"></script>

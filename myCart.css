@@ -1,180 +1,206 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Crate Helvetica", "Helvetica Neue", Helvetica, Arial;
+}
+
+
+#ExtraTOPLinks a{
+color: black;
+padding-right: 10px;
+}
+
+
+/* Sourav's Part starts */
 .Big_cont {
-    display: flex;
-    margin-top: 67px;
-    padding: 20px;
-    font-family: "Crate Helvetica", "Helvetica Neue", Helvetica, Arial;
-    /* border: 1px solid red; */
+  display: flex;
+  margin-top: 67px;
+  padding: 20px;
+
+  /* border: 1px solid red; */
 }
 
 #Small_Img {
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* border: 1px solid red; */
+  height: 450px;
 
 }
 
 #Small_Img img {
-    width: 62px;
-    height: 62px;
-    padding-bottom: 10px;
-    /* border: 1px solid red; */
+  width: 62px;
+  height: 62px;
+  padding-bottom: 10px;
+  /* border: 1px solid red; */
 
 }
 
-/* #Big-Img{
-    position: absolute; 
- } */
+#Big-Img{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* border: 1px solid red; */
+  height: 630px;
+ }
 
 #Big-Img img {
-    width: 630px;
-    height: 630px;
-    margin-left: 43px;
-    /* border: 1px solid red; */
+  width: 630px;
+  height: 630px;
+  margin-left: 43px;
+  /* border: 1px solid red; */
 
 }
 
 #content {
-    width: 444px;
-    /* height: 1835px; */
-    margin-left: 46px;
-    /* border: 1px solid red; */
-    /* background-color: aqua; */
+  width: 444px;
+  /* height: 1835px; */
+  margin-left: 46px;
+  /* border: 1px solid red; */
+  /* background-color: aqua; */
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+
 }
 
 #content h1 {
-    font-size: 20px;
-    font-weight: 800;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 #Sku {
-    color: #666666;
-    margin-top: 7px;
+  color: #666666;
+  margin-top: 7px;
 }
 
 #priceSKU {
-    margin-top: 8px;
-    font-size: large;
-    font-weight: 800;
+  margin-top: 8px;
+  font-size: large;
+  font-weight: 800;
 }
 
 #crate {
-    color: #666666;
-    margin-top: 31px;
+  color: #666666;
+  margin-top: 31px;
 }
 
 .box {
-    border: 2px solid black;
-    width: 314px;
-    height: 48px;
-    padding: 0px 12px;
-    margin-bottom: 27px;
+  border: 2px solid black;
+  width: 314px;
+  height: 48px;
+  padding: 0px 12px;
+  margin-bottom: 27px;
 }
 
 .box p {
-    font-size: 15px;
-    text-align: center;
-    font-size: 800;
+  font-size: 15px;
+  text-align: center;
+  font-size: 800;
 }
 
 
 
 #borderBottom {
-    margin-top: 43px;
-    border-top: 1px solid #666666;
-    width: 444px;
+  margin-top: 43px;
+  border-top: 1px solid #666666;
+  width: 444px;
 }
 
 .numberOne {
-    /* padding-top: 43px; */
-    display: flex;
-    justify-content: space-between;
-    width: 444px;
-    /* height: 88px; */
+  /* padding-top: 43px; */
+  display: flex;
+  justify-content: space-between;
+  width: 444px;
+  /* height: 88px; */
 }
 
 .PBox {
-    border: 2px solid #666666;
-    width: 33px;
-    height: 33px;
-    margin-top: 27px;
-    text-align: start;
-    /* margin-bottom: 27px; */
+  border: 2px solid #666666;
+  width: 33px;
+  height: 33px;
+  margin-top: 27px;
+  text-align: start;
+  /* margin-bottom: 27px; */
 }
 
 .PBox>p {
-    text-align: center;
+  text-align: center;
 }
 
 
 .ImageCrate {
-    /* border: 2px solid red; */
-    display: flex;
-    padding-bottom: 32px;
+  /* border: 2px solid red; */
+  display: flex;
+  padding-bottom: 32px;
 }
 
 .crateImage {
-    margin: auto;
+  margin: auto;
 
 }
 
 .crateImage img {
-    /* border: 1px solid black; */
-    width: 100px;
-    height: 47px;
-    margin-right: 50px;
+  /* border: 1px solid black; */
+  width: 100px;
+  height: 47px;
+  margin-right: 50px;
 }
 
 #crateContent {
-    width: 282px;
-    line-height: 30px;
-    /* margin-left: 10px; */
-    /* margin-right: 50px; */
+  width: 282px;
+  line-height: 30px;
+  /* margin-left: 10px; */
+  /* margin-right: 50px; */
 }
 
 #quantity {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #buttons span {
-    border: 1px solid black;
-    text-align: center;
-    padding: 10px;
-    padding-right: 12px;
-    padding-left: 12px;
-    width: 40px;
-    height: 40px;
-    margin: 4px 4px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 40px;
+  height: 40px;
+  margin: 4px 4px;
 }
 
 #buttons button {
-    width: 40px;
-    height: 40px;
-    background-color: #F0EFED;
-    border: none;
-    font-size: x-large;
+  width: 40px;
+  height: 40px;
+  background-color: #F0EFED;
+  border: none;
+  font-size: x-large;
 }
 
 #buttonPrice p {
-    font-size: large;
-    font-weight: 800;
+  font-size: large;
+  font-weight: 800;
 }
 
 #largeButtons button {
-    width: 444px;
-    height: 48px;
-    margin-bottom: 10px;
-    font-weight: bold;
+  width: 444px;
+  height: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 #largeButtons button:nth-child(1) {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
+
 #largeButtons button:nth-child(3) {
-    margin-bottom: 50px;
-    background-color: #f0efed;
-    border: none;
+  margin-bottom: 50px;
+  background-color: #f0efed;
+  border: none;
 }
 
 
@@ -185,242 +211,422 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 500ms ease-in-out;
-    border: 1px solid black;
-    z-index: 10;
-    background-color: white;
-    /* width: 500px; */
-    max-width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 500ms ease-in-out;
+  border: 1px solid black;
+  z-index: 10;
+  background-color: white;
+  /* width: 500px; */
+  max-width: 80%;
 }
 
 .modal.active {
-    transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-header {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border-bottom: 1px solid black; */
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid black; */
 }
 
 .modal-header .title {
-    font-size: 1.25rem;
-    font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .modal-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .modal-body {
-    padding: 10px 15px;
-    width: 940px;
-    /* border: 2px solid red; */
-    height: 538px;
+  padding: 10px 15px;
+  width: 940px;
+  /* border: 2px solid red; */
+  height: 538px;
 }
 
 #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 500ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
+  position: fixed;
+  opacity: 0;
+  transition: 500ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
 }
 
 #overlay.active {
-    opacity: 1;
-    pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
 }
 
 
 #flex {
-    display: flex;
+  display: flex;
 }
 
 #image {
-    margin-left: 50px;
-    margin-top: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 img {
-    width: 350px;
+  width: 350px;
 }
 
 #AcceptTerm {
-    /* border: 2px solid black; */
-    width: 440px;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
+  /* border: 2px solid black; */
+  width: 440px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
 #AcceptTerm button {
-    width: 100%;
-    height: 48px;
-    margin-bottom: 10px;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 10px;
 }
 
 #AcceptTerm button:nth-child(3) {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
 .confirm {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
 
-/* Pop-up Add to Cart ENDS */
+/* Pop-up for Add to Cart ENDS */
+
+.extraInfo{
+  width: 444px;
+  height: 70px;
+  margin-bottom: 10px;
+  background-color: #f0efed;
+  border: none;
+}
+
+
 
 .extraInfo button {
-    width: 444px;
-    height: 70px;
-    margin-bottom: 10px;
-   background-color: #f0efed;
-   border: none;
+  width: 444px;
+  height: 70px;
+  margin-bottom: 10px;
+  background-color: #f0efed;
+  border: none;
 }
+
+/* WhiteContent */
+
+#WhiteContent {
+  width: 987px;
+  height: 224px;
+  /* border: 2px solid red; */
+  margin: auto;
+  margin-top: 90px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+#feedbackImage img{
+  width: 100%;
+  /* display: block; */
+}
+
 
 /* Carousel of sofas */
 
-
-/* SHREEKANT */
-
-
 .parent {
-    display: flex;
-    justify-content: center;
-    height: 350px;
-    align-items: center;
-    width: 100%;
-    /* margin: auto; */
-    margin-top: -40px;
-    /* border: 2px solid green; */
-
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  align-items: center;
+  width: 100%;
+  /* margin-top: -40px; */
+  /* border: 2px solid red; */
+  margin-top: 100px;
+  /* margin-bottom: 120px; */
 }
 
 .outer {
-    height: 455px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 120px;
-    background-color: white;
+  height: 600px;
+  /* margin-top: 120px; */
+  background-color: white;
+  /* border: 2px solid red; */
+  width: 100%;
+  /* margin-top: 120px; */
 }
 
+.marginLeft{
+  padding-left: 50px;
+}
+
+/* .parent {
+  border: 2px solid red;
+} */
+
 .outer>p {
-    padding-left: 20px;
-    font-size: 20px;
-    padding-top: 15px;
+  padding-left: 20px;
+  font-size: 20px;
+  padding-top: 15px;
 }
 
 #leftarrow button {
-    border-radius: 55%;
-    border-width: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  border-radius: 55%;
+  border-width: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
 #rightarrow button {
-    border-radius: 55%;
-    border-width: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  border-radius: 55%;
+  border-width: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .child {
-    width: 20%;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 340px;
-    margin-top: 0px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* background-color: rgb(241, 240, 240); */
-    display: none;
-    padding-top: 0;
-    transition: 0.5s;
+  height: 437px;
+  margin-top: 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: none;
+  padding-top: 0;
+  transition: 0.5s;
+  padding-right: 5px;
 
 }
 
 .child:hover {
-    cursor: pointer;
-    transform: translate(2px, -5px);
+  cursor: pointer;
+  transform: translate(2px, -5px);
 
 }
 
 .child p {
-    margin-top: -5 px;
-    padding-left: 15px;
+  margin-top: -5 px;
+  padding-left: 15px;
 
 }
 
 #commonClass {
-    padding-left: 80px;
-    color: #999;
+  padding-left: 80px;
+  color: #999;
 }
 
 #commonClass1 {
-    padding-left: 40px;
-    color: #999;
+  padding-left: 40px;
+  color: #999;
 }
 
 .child p:nth-child(2) {
-    line-height: 5px;
+  line-height: 5px;
 }
 
 .child img {
-    width: 100%;
-    height: 230px;
+  width: 100%;
+  height: 321px;
 }
 
 .child button {
-    margin-left: 15px;
-    background-color: aliceblue;
-    color: #29B6F6;
-    border: 1px solid #29B6F6;
-    cursor: pointer;
-    border-radius: 5px;
+
+  background-color: black;
+  color: white;
+  width: 143px;
+  height: 36px;
+  cursor: pointer;
+
 }
 
 #leftarrow {
-    margin-left: 12px;
-    width: 3%;
-    display: inline-block;
+  /* margin-left: 12px; */
+  width: 3%;
+  display: inline-block;
 }
 
 #rightarrow {
-    margin-right: 12px;
-    width: 3%;
-    display: inline-block;
+  /* margin-right: 12px; */
+  width: 3%;
+  display: inline-block;
 }
 
 #leftarrow button,
 #rightarrow button {
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
-    margin-top: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 35px;
 }
 
 
-/* SHREEKANT enDS */
+/* CAROUSEL for sofas ENDS  */
+
+
+
+#RelatedCategories{
+  margin-left: 40px;
+  display: flex;
+  width: 90%;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+}
+#RelatedCategories a{
+text-decoration: none;
+color: black;
+/* border: 1px solid black; */
+background-color: #F0EFED;
+padding: 15px;
+font-size: 14px;
+}
+
+#RelatedCategories1{
+  margin-top: 10px;
+  margin-left: 40px;
+  display: flex;
+  width: 90%;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+}
+#RelatedCategories1 a{
+  font-size: 14px;
+text-decoration: none;
+color: black;
+/* border: 1px solid black; */
+background-color: #F0EFED;
+padding: 15px;
+}
+#RelatedCategories1:hover{
+text-decoration: dashed;
+}
+
+/* Text Underline Hover Effect STARTS */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Text Underline Hover Effect ENDS */
+
+
+
+/* For Add to cart button in Carousel */
+
+.hover-underline-animation1{
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+.hover-underline-animation1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transform-origin: bottom right;
+  /* transform-origin: top right; */
+  transition: transform 0.20s ease-out;
+}
+
+.hover-underline-animation1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* For Accept&Continue button inside Pop-Up */
+
+.hover-underline-animation2{
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+.hover-underline-animation2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: greenyellow;
+  transform-origin: bottom right;
+  /* transform-origin: top right; */
+  transition: transform 0.20s ease-out;
+}
+
+.hover-underline-animation2:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* For Decline button inside Pop-Up */
+
+#hover-underline-animation3{
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+#hover-underline-animation3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF5722;
+  transform-origin: bottom right;
+  /* transform-origin: top right; */
+  transition: transform 0.20s ease-out;
+}
+
+#hover-underline-animation3:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
