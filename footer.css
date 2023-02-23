@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body>div{
+    background-color: #333;
+}
+#footer{
+    width: 72%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 70px 0 48px 0;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.logo-s{
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.logo-s:hover{
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+#apple{
+   display: flex;
+   background-color: black;
+   border: 1px solid white;
+   color: white;
+   border-radius: 5px;
+   margin-top: 30px;
+}
+#apple>div>img{
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+}
+.upper div>p{
+    color: #ccc;
+    margin-bottom: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.upper div>p:hover{
+    text-decoration: underline 1px whitesmoke;
+    text-underline-offset: .3em;
+}
+hr{
+    margin-top: 60px;
+    margin-bottom: 22px;
+}
+#hr1{
+    margin-bottom: 40px;
+}
+h3,h1{
+    color: white;
+}
+h3{
+    margin-bottom: 8px;
+}
+#glitz{
+    font-size: 42px;
+}
+.inner{
+    display: flex;
+    gap: 15px;
+}
+#big{
+    font-size: 130px;
+}

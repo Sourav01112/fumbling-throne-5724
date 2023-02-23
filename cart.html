@@ -20,7 +20,7 @@
           <img src="./cart-banner.png" alt="banner" id="banner">
           <hr>
           <div id="items">
-
+            //all product will display here
           </div>
           <div id="gift" class="icon-join">
             <div>
@@ -36,10 +36,10 @@
              <h2>Returns Made Easy</h2>
              <p>At Crate and Barrel, we stand behind the quality of our products and want every purchase to be a positive experience.</p>
              <a href="#">Our Return/Exchange Policy</a>
-             <h2>Free Store & Warehouse Pickup</h2>
+             <h2 id="free-store">Free Store & Warehouse Pickup</h2>
              <p>Make purchases online and pick up at the store or warehouse of your choice. Get your items faster and avoid shipping charges.</p>
              <a href="#">Store Pickup FAQs</a>
-             <div id="secure" class="icon-join">
+             <div id="secure" class="icon-join" >
                 <div>
                     <img src="./lock-closed-outline.svg" alt="icon" id="icon">
                 </div>
@@ -50,10 +50,10 @@
              </div>
             </div>
             <div>
-              <h4>International Shipping</h4>
-              <p>Shipping outside the US and Canada? Complete the
+              <h2>International Shipping</h2>
+              <p class="links" >Shipping outside the US and Canada? Complete the
                 <a href="#">International Order Quote</a>form for eligible merchandise totaling $5,000 or more.</p>
-                <p>Shipping to Canada? <a href="#">Shop our Canadian website.</a></p>
+                <p >Shipping to Canada? <a href="#">Shop our Canadian website.</a></p>
             </div>
           </div>
         </div>
@@ -66,24 +66,51 @@
                     <p>Cart Summary</p>
                 </div>
             </div>
-            <p>Merchandise: <span></span></p>
-            <p>Est. Shipping & Handling: <span></span></p>
-            <p>Shipping Discount: <span></span></p>
-            <p>Est. Tax: <span></span></p>
+            <div class="cart-logo" id="merchant">
+                <div>
+                    <p>Merchandise: </p>
+                </div>
+                <span>00</span>
+            </div>
+            <div class="cart-logo">
+                <div>
+                    <p>Shipping Charges:</p>
+                    <!-- <img src="./help-circle-outline.svg" alt="icon" class="icon2"> -->
+                </div>
+                <span>00</span>
+            </div>
+            <div class="cart-logo" id="discount">
+                <p>Shipping Discount:</p>
+                <span>00</span>
+            </div>
+            <div class="cart-logo">
+                <div>
+                    <p>Est.Tax:</p>
+                    <img src="./help-circle-outline.svg" alt="icon" class="icon2">
+                </div>
+                <span>00</span>
+            </div>
             <p>Estimated for 60540</p>
-          <hr>
-          <h2>Est. Order Total: <span></span></h2>
+          <hr id="hr1">
+          <div id="total">
+            <h3>Est. Order Total:</h3>
+            <span">00</span>
+          </div>
           <img src="./cartoffer.png" alt="img">
-          <h3>Apply a Promotion Code</h3>
+          <h4>Apply a Promotion Code</h4>
           <p>Remove any spaces or dashes before hitting apply.</p>
-          <input type="text">
-          <button>APPLY</button>
-          <button>CHECKOUT NOW</button>
+          <div id="promo">
+            <input type="text">
+            <button>APPLY</button>
+          </div>
+          <button id="checkout">CHECKOUT NOW</button>
           <p>By continuing to Checkout, you are agreeing to our Terms of Use and Privacy Policy.</p>
-          <hr>
-          <p>Or use other checkout methods:</p>
-          <button>PayPal</button>
-          <button>venmo</button>
+          <hr id="hr2">
+          <div id="payment-opt">
+            <p>Or use other checkout methods:</p>
+            <button id="button1">Pay<span style="color: rgb(8, 163, 247);">Pal</span></button>
+            <button id="button2">venmo</button>
+          </div>
         </div>
     </div>
     <p><a href="#">Shipping internationally?</a></p>
