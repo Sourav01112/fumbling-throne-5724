@@ -5,9 +5,9 @@ body {
 }
 
 
-#ExtraTOPLinks a{
-color: black;
-padding-right: 10px;
+#ExtraTOPLinks a {
+  color: black;
+  padding-right: 10px;
 }
 
 
@@ -40,13 +40,13 @@ padding-right: 10px;
 
 }
 
-#Big-Img{
+#Big-Img {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   /* border: 1px solid red; */
   height: 630px;
- }
+}
 
 #Big-Img img {
   width: 630px;
@@ -85,6 +85,11 @@ padding-right: 10px;
 #crate {
   color: #666666;
   margin-top: 31px;
+  font-size: 14px;
+}
+.box:hover{
+background-color: orange;
+color: white;
 }
 
 .box {
@@ -101,7 +106,10 @@ padding-right: 10px;
   font-size: 800;
 }
 
-
+#onDIsp{
+  color: black;
+  font-size: 14px;
+}
 
 #borderBottom {
   margin-top: 43px;
@@ -317,15 +325,28 @@ img {
 
 /* Pop-up for Add to Cart ENDS */
 
-.extraInfo{
+.extraInfo {
   width: 444px;
   height: 70px;
-  margin-bottom: 10px;
   background-color: #f0efed;
   border: none;
+  font-size: large;
+  text-align: auto;
+  margin-bottom: 10px;
 }
 
-
+#mydiv{
+  padding: 20px;
+  line-height: 20px;
+} 
+#mydiv li {
+  font-size: 14px;
+  line-height: 20px;
+}
+#mydiv p {
+  font-size: 14px;
+ 
+}
 
 .extraInfo button {
   width: 444px;
@@ -348,7 +369,7 @@ img {
   text-align: justify;
 }
 
-#feedbackImage img{
+#feedbackImage img {
   width: 100%;
   /* display: block; */
 }
@@ -377,7 +398,7 @@ img {
   /* margin-top: 120px; */
 }
 
-.marginLeft{
+.marginLeft {
   padding-left: 50px;
 }
 
@@ -392,21 +413,35 @@ img {
 }
 
 #leftarrow button {
-  border-radius: 55%;
+  /* border-radius: 55%; */
   border-width: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: black;
+  color: white;
 }
 
+#leftarrow button:hover {
+  background-color: red;
+}
+
+
 #rightarrow button {
-  border-radius: 55%;
+  /* border-radius: 55%; */
   border-width: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: black;
+  color: white;
+}
+
+#rightarrow button:hover {
+  background-color: red;
 }
 
 .child {
@@ -463,13 +498,13 @@ img {
 
 #leftarrow {
   /* margin-left: 12px; */
-  width: 3%;
+  /* width: 3%; */
   display: inline-block;
 }
 
 #rightarrow {
   /* margin-right: 12px; */
-  width: 3%;
+  /* width: 3%; */
   display: inline-block;
 }
 
@@ -486,23 +521,24 @@ img {
 
 
 
-#RelatedCategories{
+#RelatedCategories {
   margin-left: 40px;
   display: flex;
   width: 90%;
   /* border: 2px solid red; */
   justify-content: space-between;
 }
-#RelatedCategories a{
-text-decoration: none;
-color: black;
-/* border: 1px solid black; */
-background-color: #F0EFED;
-padding: 15px;
-font-size: 14px;
+
+#RelatedCategories a {
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid black; */
+  background-color: #F0EFED;
+  padding: 15px;
+  font-size: 14px;
 }
 
-#RelatedCategories1{
+#RelatedCategories1 {
   margin-top: 10px;
   margin-left: 40px;
   display: flex;
@@ -510,16 +546,18 @@ font-size: 14px;
   /* border: 2px solid red; */
   justify-content: space-between;
 }
-#RelatedCategories1 a{
+
+#RelatedCategories1 a {
   font-size: 14px;
-text-decoration: none;
-color: black;
-/* border: 1px solid black; */
-background-color: #F0EFED;
-padding: 15px;
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid black; */
+  background-color: #F0EFED;
+  padding: 15px;
 }
-#RelatedCategories1:hover{
-text-decoration: dashed;
+
+#RelatedCategories1:hover {
+  text-decoration: dashed;
 }
 
 /* Text Underline Hover Effect STARTS */
@@ -554,11 +592,12 @@ text-decoration: dashed;
 
 /* For Add to cart button in Carousel */
 
-.hover-underline-animation1{
+.hover-underline-animation1 {
   display: inline-block;
   position: relative;
   color: white;
 }
+
 .hover-underline-animation1::after {
   content: '';
   position: absolute;
@@ -580,11 +619,12 @@ text-decoration: dashed;
 
 /* For Accept&Continue button inside Pop-Up */
 
-.hover-underline-animation2{
+.hover-underline-animation2 {
   display: inline-block;
   position: relative;
   color: white;
 }
+
 .hover-underline-animation2::after {
   content: '';
   position: absolute;
@@ -607,11 +647,12 @@ text-decoration: dashed;
 
 /* For Decline button inside Pop-Up */
 
-#hover-underline-animation3{
+#hover-underline-animation3 {
   display: inline-block;
   position: relative;
   color: black;
 }
+
 #hover-underline-animation3::after {
   content: '';
   position: absolute;
@@ -629,4 +670,55 @@ text-decoration: dashed;
 #hover-underline-animation3:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1400px) and (max-width:2000px) {
+  .Big_cont {
+    display: flex;
+    margin-top: 67px;
+    padding: 20px;
+    height: 2000px;
+    /* border: 1px solid red; */
+  }
+
+  #Small_Img {
+
+    display: flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 800px;
+     /* border: 1px solid red; */
+  }
+
+  #Small_Img img {
+    width: 120px;
+    height: 120px;
+    padding-bottom: 10px;
+   
+  }
+
+  #Big-Img {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* border: 1px solid red; */
+    height: 800px;
+  }
+
+  #Big-Img img {
+    width: 850px;
+    height: 780px;
+    margin-left: 43px;
+    /* border: 1px solid red; */
+
+  }
 }

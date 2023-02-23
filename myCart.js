@@ -12,7 +12,7 @@ let smallImageSection = document.querySelector("#Small_Img")
 
 async function fetchAndRenderSmallImages(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/7/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/1/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
 
         renderSmallImagesSection(data.smallImages)
@@ -44,7 +44,7 @@ let BigImageSection = document.querySelector("#Big-Img")
 
 async function fetchAndRenderBigImages(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/7/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/1/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
 
         // console.log(data)
@@ -75,9 +75,10 @@ let ContentSection = document.querySelector("#content")
 
 async function fetchAndRenderContent(queryParamString = null) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/7/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/1/${queryParamString ? queryParamString : ""}`)
         let data = await resp.json()
         console.log(data)
+
         // let productData = data.map((item) => ({
         //     imageUrl: item.images,
         //     name: item.title,
@@ -173,31 +174,31 @@ function renderContentSection(cardsData) {
     }
 
 
-let xtrabutton = document.getElementById("xtra")
+// * <div> Hide - show function
+
+    let xtrabutton = document.getElementById("xtra")
 
     //  let toggle = button => {
 
-    xtrabutton.addEventListener("click", ()=>{
+    xtrabutton.addEventListener("click", () => {
 
         let element = document.getElementById("mydiv");
         let hidden = element.getAttribute("hidden");
-    
+
         if (hidden) {
-           element.removeAttribute("hidden");
-           button.innerText = "Hide div";
+            element.removeAttribute("hidden");
+            xtrabutton.innerText = "DETAILS";
         } else {
-           element.setAttribute("hidden", "hidden");
-           button.innerText = "Show div";
+            element.setAttribute("hidden", "hidden");
+            xtrabutton.innerText = `DETAILS`;
         }
     })
-    
-
-
-
-
 
 
 }
+
+
+
 
 function getContent(title, price, images, quantity) {
     return `
@@ -218,25 +219,9 @@ function getContent(title, price, images, quantity) {
 
             <div id="borderBottom"></div>
 
-            <div class="numberOne">
-                <div class="PBox">
-                    <p>1</p>
-                </div>
-                <p>Fabric </p>
-                <p>+</p>
-            </div>
+           
 
-            <div id="borderBottom"></div>
-
-            <div class="numberOne">
-                <div class="PBox">
-                    <p>2</p>
-                </div>
-                <p>Leg </p>
-                <p>+</p>
-            </div>
-
-            <div id="borderBottom"></div>
+         
 
             <p>SHIP IT</p>
             <p>This item is made just for you. Anticipated delivery by late April.</p>
@@ -308,33 +293,36 @@ ${/* This is Add to cart pop up */""}
 
 ${/* Add to cart pop up ENDS here*/""}
 
-<div id="xtra" class="extraInfo">DETAIL</div>
+<button id="xtra" class="extraInfo">Details</button>
 
 <div id="mydiv">
 
-<p>Registartion Successful</p>
+<p>A Crate & Barrel classic, the Petrie chair sits at the intersection of mid-century and today, with clean lines and tailored cushions expertly button-tufted by hand. The chair's pure 1960s aesthetic is scaled deep so you can sit firm and upright, with the option of slouching back in comfort. Green cotton velvet tailors the chair's sleek, boxy cushions and slim track arms with rich color, durability and a luxuriously soft hand.</p>
 
-<p>We will email your entry passes to the Louvre Museum in Paris. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos modi, porro, voluptas inventore corrupti vitae aliquid, minima recusandae unde doloremque eligendi impedit aperiam placeat quas consequuntur error fugiat veniam beatae. Quae, est at iure nisi inventore fugit esse autem. Corporis quia, provident quidem iste sequi saepe tempora, consequatur reiciendis, ullam consequuntur fuga ut aspernatur. Aliquam laudantium, obcaecati a inventore sint enim deserunt omnis ad perspiciatis quia, in eligendi optio esse maiores natus adipisci, quo est perferendis. Ipsum ex architecto ducimus incidunt eum delectus perferendis tempore possimus mollitia voluptas minima, deleniti similique cum veniam. Provident quidem sit magnam magni non dolores, mollitia obcaecati nobis quas unde porro, blanditiis consequatur! Illum odio sit ipsum enim quae repudiandae molestiae, nisi ratione nobis quas at dignissimos ad culpa temporibus! Corrupti aut officia magnam suscipit iste voluptates iure praesentium perferendis dignissimos maxime et quaerat, impedit nisi, repudiandae eveniet ab? Conslectus quidem nam tempora vero rerum, animi amet officiis totam dicta quia accusantium. Eius ab explicabo, molestiae nihil facere labore vitae repellendus iste error officia, at quo placeat dole nostrum dignissimos necessitatibus quisquam magnam sunt aut blanditiis. Vel consequuntur repellat fugit tempora, perferendis eligendi asperiores est. Voluptatem, asperiores? Quas impedit laboriosam perferendis sint, et consectetur accusantium iste tempore repellendus accusamus similique praesentium expedita alias dolore vero culpa, magni, itaque quia nobis. Sit eligendi eum omnis sunt, modi earum fugit cumque, ratione quas, doloremque aperiam beatae. Laudantium, soluta hic.</p>
+<p>Petrie Velvet Mid-Century Chair 35"Wx36"Dx32"H</p>
+<ul type="disk">
+<li>Frame is benchmade with hardwood that's kiln-dried to prevent warping</li>
+<li>Cotton velvet</li>
+<li>Sinuous wire spring suspension system</li>
+<li>Seat cushion has soy-based polyfoam wrapped in fiber encased in downproof ticking</li>
+<li>Back cushion has a blend of virgin and recycled fiber encased in downproof ticking</li>
+<li>Hardwood legs finished with a dark ebony stain</li>
+<li>Topstitched and button-tufted detail</li>
+<li>See product label or call customer service for additional details on product content</li>
+</ul>
 
 </div>
 
-
-
-
-
+<button id="xtra" class="extraInfo">REVIEWS</button>
+<button id="xtra" class="extraInfo">DIMENSION</button>
+<button id="xtra" class="extraInfo">CARE</button>
 
 `
 }
 
-
 // --------------Content Section Function ENDS --------------->>
 
-// {/* <div class="extraInfo">
-// <button>DETAIL</button> <br>
-// <button>REVIEWS</button><br>
-// <button>DIMENSION</button><br>
-// <button>CARE</button><br>
-// </div> */}
+
 // ?--------Carousel starts----------->
 
 function display() {
