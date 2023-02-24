@@ -1165,8 +1165,8 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
-  font-size: 12px;
-  width: 30px;
+  font-size: 14px;
+  width: 34px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -1180,4 +1180,28 @@
   text-decoration: none;
   color: black;
   text-orientation: upright;
+}
+#feedback:hover {
+  position: fixed;
+  bottom: 190px;
+  right: -5px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  letter-spacing: 2px;
+  color: #616161;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 34px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+  margin-bottom: 3px;
+  display: flex;
+  text-align: center;
 }
