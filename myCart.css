@@ -40,6 +40,16 @@ body {
 
 }
 
+#Small_Img img:hover {
+  width: 262px;
+  height: 262px;
+  padding-bottom: 10px;
+  transition: 1s;
+  /* border: 1px solid red; */
+
+}
+
+
 #Big-Img {
   position: -webkit-sticky;
   position: sticky;
@@ -87,9 +97,10 @@ body {
   margin-top: 31px;
   font-size: 14px;
 }
-.box:hover{
-background-color: orange;
-color: white;
+
+.box:hover {
+  background-color: orange;
+  color: white;
 }
 
 .box {
@@ -106,7 +117,7 @@ color: white;
   font-size: 800;
 }
 
-#onDIsp{
+#onDIsp {
   color: black;
   font-size: 14px;
 }
@@ -169,7 +180,7 @@ color: white;
   justify-content: space-between;
 }
 
-#buttons span {
+#buttonsCounter span {
   border: 1px solid black;
   text-align: center;
   padding: 10px;
@@ -180,13 +191,20 @@ color: white;
   margin: 4px 4px;
 }
 
-#buttons button {
+#buttonsCounter button {
   width: 40px;
   height: 40px;
   background-color: #F0EFED;
   border: none;
   font-size: x-large;
 }
+
+#buttonsCounter button:hover {
+  transform: translate(0px, -2px);
+  transition: 0.10s;
+  background-color: #FF5722;
+}
+
 
 #buttonPrice p {
   font-size: large;
@@ -335,17 +353,19 @@ img {
   margin-bottom: 10px;
 }
 
-#mydiv{
+#mydiv {
   padding: 20px;
   line-height: 20px;
-} 
+}
+
 #mydiv li {
   font-size: 14px;
   line-height: 20px;
 }
+
 #mydiv p {
   font-size: 14px;
- 
+
 }
 
 .extraInfo button {
@@ -402,9 +422,7 @@ img {
   padding-left: 50px;
 }
 
-/* .parent {
-  border: 2px solid red;
-} */
+
 
 .outer>p {
   padding-left: 20px;
@@ -458,6 +476,7 @@ img {
 .child:hover {
   cursor: pointer;
   transform: translate(2px, -5px);
+  /* background-image: ; */
 
 }
 
@@ -673,13 +692,7 @@ img {
 }
 
 
-
-
-
-
-
-
-@media screen and (min-width:1400px) and (max-width:2000px) {
+#buttons @media screen and (min-width:1400px) and (max-width:2000px) {
   .Big_cont {
     display: flex;
     margin-top: 67px;
@@ -696,14 +709,14 @@ img {
     position: sticky;
     top: 0;
     height: 800px;
-     /* border: 1px solid red; */
+    /* border: 1px solid red; */
   }
 
   #Small_Img img {
     width: 120px;
     height: 120px;
     padding-bottom: 10px;
-   
+
   }
 
   #Big-Img {

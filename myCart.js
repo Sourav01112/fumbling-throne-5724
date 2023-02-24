@@ -6,14 +6,17 @@ window.addEventListener("load", () => {
     fetchAndRenderBigImages()
     fetchAndRenderContent()
 })
+
+//connect this function to jyoti's SinglepRoduct Function and pass click and id
+
 let globalArr = []
 
 // --------------SMALL Images --------------->>
 let smallImageSection = document.querySelector("#Small_Img")
 
-async function fetchAndRenderSmallImages(queryParamString = null) {
+async function fetchAndRenderSmallImages() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/3/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/3`)
         let data = await resp.json()
 
         renderSmallImagesSection(data.smallImages)
@@ -43,9 +46,9 @@ function smallImages(SmallImageUrl) {
 
 let BigImageSection = document.querySelector("#Big-Img")
 
-async function fetchAndRenderBigImages(queryParamString = null) {
+async function fetchAndRenderBigImages() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/3/${queryParamString ? queryParamString : ""}`)
+        let resp = await fetch(`http://localhost:3000/Products/3`)
         let data = await resp.json()
 
         // console.log(data)
@@ -80,22 +83,64 @@ async function fetchAndRenderContent() {
         let data = await resp.json()
         // console.log(data)
         globalArr = data
-        console.log(globalArr)
-        renderContentSection(data.title, data.price, data.images)
-
-
+        renderContentSection(data.title, data.price, data.images, data.id)
 
     } catch (error) {
         console.log(error)
+    }
+
+
+    //Adding Event Listener to the Add to cart button just after the Async Await process in Async Await function 
+
+    //? Local Storage ADD to cart
+
+    let addtocart = document.querySelector("#AddToLocalStorage")
+    addtocart.addEventListener("click", () => {
+        let cartArr = JSON.parse(localStorage.getItem("cart")) || []
+
+        let obj = {
+            id: globalArr.id,
+            title: globalArr.title,
+            price: globalArr.price,
+            images: globalArr.images,
+            title: globalArr.title,
+            quantity: 1,
+        }
+
+        if (checkDuplicate(obj.id)) {
+            // if (checkDuplicate(element.target.dataSet.id)) {
+            alert("Product Already In The Cart")
+        } else {
+            cartArr.push(obj)
+            localStorage.setItem("cart", JSON.stringify(cartArr))
+            // add here next page redirection for vishal
+            alert("Product Has Successfully Been Added")
+        }
+        // console.log(dataSet.id)
+        // cartArr.push(obj)
+        // localStorage.setItem("cart", JSON.stringify(cartArr))
+        // alert("Product Has Successfully Been Added")
+    })
+
+
+    // ? Function to check Duplicate
+    function checkDuplicate(element) {
+        let cartArr = JSON.parse(localStorage.getItem("cart")) || []
+        for (let i = 0; i < cartArr.length; i++) {
+            if (element.id == cartArr[i].id) {
+                return true
+            }
+        }
+        return false
     }
 }
 // 
 
 
 
-function renderContentSection(title, price, images) {
-    // console.log(cardsData)
-    let cardSection = `${getContent(title, price, images)} `;
+function renderContentSection(title, price, images, id) {
+    // console.log(id)
+    let cardSection = `${getContent(title, price, images, id)} `;
 
     ContentSection.innerHTML = cardSection
 
@@ -105,6 +150,7 @@ function renderContentSection(title, price, images) {
 
 
     const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    // console.log(openModalButtons)
     const closeModalButtons = document.querySelectorAll('[data-close-button]')
     const overlay = document.getElementById('overlay')
 
@@ -112,6 +158,7 @@ function renderContentSection(title, price, images) {
     openModalButtons.forEach(button => {
         button.addEventListener('click', () => {
             const modal = document.querySelector(button.dataset.modalTarget)
+            console.log(button.dataset.modalTarget)
             openModal(modal)
         })
     })
@@ -145,32 +192,13 @@ function renderContentSection(title, price, images) {
 
     //! <---------------- Add to Cart popup ENDS------------->
 
-    // Local Storage ADD to cart
 
-    let addtocart = document.querySelector("#AddToLocalStorage")
 
-    let cartArr = JSON.parse(localStorage.getItem("cart")) || []
 
-    addtocart.addEventListener("click", (element) => {
-        if (checkDuplicate(element)) {
-            alert("Product Already In The Cart")
-        } else {
-            // globalArr.push({ ...element, quantity: 1 })
-            localStorage.setItem("cart", JSON.stringify(globalArr))
-            // add here next page redirection for vishal
-            alert("Product Has Successfully Been Added")
-        }
-    })
 
-    // ? Function to check Duplicate
-    function checkDuplicate(element) {
-        for (let i = 0; i < cartArr.length; i++) {
-            if (element.id == cartArr[i].id) {
-                return true
-            }
-        }
-        return false
-    }
+
+
+
 
 
     // * <div> Hide - show function
@@ -196,18 +224,24 @@ function renderContentSection(title, price, images) {
     // Quantity Increment or Decrement button Function
 
     let incrementBTN = document.getElementById("incr")
-    incrementBTN.addEventListener("click", (element) => {
-        element.quantity++
-        console.log(element.quantity)
-        localStorage.setItem("cart", JSON.stringify(globalArr))
+    let counter = document.getElementById("counter")
+    let count = 1
+    incrementBTN.addEventListener("click", () => {
+        count++
+        counter.innerText = count
+        console.log(count)
+        // localStorage.setItem("cart", JSON.stringify(count))
     })
 
 
     let decrementBTN = document.getElementById("decr")
-    decrementBTN.addEventListener("click", (element) => {
-        element.quantity--
-        console.log(element.quantity)
-        localStorage.setItem("cart", JSON.stringify(globalArr))
+    decrementBTN.addEventListener("click", () => {
+        if (counter.innerText > 1) {
+            count--
+        }
+        counter.innerText = count
+        console.log(count)
+        // localStorage.setItem("cart", JSON.stringify(globalArr))
     })
 
 
@@ -216,7 +250,8 @@ function renderContentSection(title, price, images) {
 
 
 
-function getContent(title, price, images, quantity) {
+function getContent(title, price, images, id) {
+    // console.log(id)
     return `
             <h1>${title}</h1>
 
@@ -259,9 +294,9 @@ function getContent(title, price, images, quantity) {
             <!-- Buttons with quantity -->
             <div id="quantity">
 
-                <div id="buttons">
+                <div id="buttonsCounter">
                     <button id="decr">&#45</button>
-                    <span>${quantity}</span>
+                    <span id="counter">1</span>
                     <button id="incr">&#43</button>
                 </div>
 
@@ -299,7 +334,7 @@ ${/* This is Add to cart pop up */""}
                 will
                 not be added.</p>
 
-            <button id="AddToLocalStorage" class="hover-underline-animation2">ACCEPT TERMS AND ADD TO CART</button> <br>
+            <button data-id="${id}" id="AddToLocalStorage" class="hover-underline-animation2">ACCEPT TERMS AND ADD TO CART</button> <br>
             <button data-close-button class="close-button" id="hover-underline-animation3">DECLINE</button>
         </div>
     </div>
