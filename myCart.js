@@ -1,10 +1,10 @@
 
 //? Fetch
 
-window.addEventListener("load", () => {
-    fetchAndRenderSmallImages()
-    fetchAndRenderBigImages()
-    fetchAndRenderContent()
+window.addEventListener("load", (id) => {
+    fetchAndRenderSmallImages(id)
+    fetchAndRenderBigImages(id)
+    fetchAndRenderContent(id)
 })
 
 //connect this function to jyoti's SinglepRoduct Function and pass click and id
@@ -14,9 +14,9 @@ let globalArr = []
 // --------------SMALL Images --------------->>
 let smallImageSection = document.querySelector("#Small_Img")
 
-async function fetchAndRenderSmallImages() {
+async function fetchAndRenderSmallImages(id) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/1`)
+        let resp = await fetch(`http://localhost:3000/Products/${id}`)
         let data = await resp.json()
 
         renderSmallImagesSection(data.smallImages)
@@ -46,9 +46,9 @@ function smallImages(SmallImageUrl) {
 
 let BigImageSection = document.querySelector("#Big-Img")
 
-async function fetchAndRenderBigImages() {
+async function fetchAndRenderBigImages(id) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/1`)
+        let resp = await fetch(`http://localhost:3000/Products/${id}`)
         let data = await resp.json()
 
         // console.log(data)
@@ -77,9 +77,9 @@ function BigImage(imageUrl) {
 
 let ContentSection = document.querySelector("#content")
 
-async function fetchAndRenderContent() {
+async function fetchAndRenderContent(id) {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/1`)
+        let resp = await fetch(`http://localhost:3000/Products/${id}`)
         let data = await resp.json()
         // console.log(data)
         globalArr = data
@@ -455,26 +455,26 @@ BtnINP.addEventListener("click", (element) => {
 
 // FROM NIKHIL's PAGE
 
-  // delete notification JS
-  let delnotification=document.getElementById('mybutton')
-  let crosssign=document.getElementById('deletemybtn')
-  crosssign.addEventListener('click',function(){
+// delete notification JS
+let delnotification = document.getElementById('mybutton')
+let crosssign = document.getElementById('deletemybtn')
+crosssign.addEventListener('click', function () {
     delnotification.remove()
-  })
+})
 
 
 // scroll to top page js
-  let mybutton = document.getElementById("myBtn");
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-  if ( document.documentElement.scrollTop > 100) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 
 function topFunction() {
 
-  document.documentElement.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
 }

@@ -21,6 +21,7 @@
   "homepage": "https://github.com/AnshumaanBaaghi/Json-server-Block-23-try#readme",
   "dependencies": {
     "json-server": "^0.17.2",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "sweetalert2": "^11.7.2"
   }
 }

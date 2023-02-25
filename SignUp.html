@@ -533,28 +533,104 @@
 
 
     // FORM SUBMISSION in LS
-    let formSub = JSON.parse(localStorage.getItem("Account")) || []
+    let formSub = JSON.parse(sessionStorage.getItem("Account")) || []
 
     let formEl = document.querySelector("#Create")
 
-    formEl.addEventListener("submit", (e) => {
-        e.preventDefault()
+    // formEl.addEventListener("submit", (e) => {
+    //     e.preventDefault()
 
-        let formObj = {
-            fName: formEl.fname.value,
-            lName: formEl.lName.value,
-            number: formEl.num.value,
-            mail: formEl.email.value,
-            password: formEl.password.value,
+    //     let formObj = {
+    //         fName: formEl.fname.value,
+    //         lName: formEl.lName.value,
+    //         number: formEl.num.value,
+    //         mail: formEl.email.value,
+    //         password: formEl.password.value,
+    //     }
+    //     formSub.push(formObj)
+    //     sessionStorage.setItem("Account", JSON.stringify(formSub))
+    //     alert("Account Created Successfully")
+    //     setTimeout(function () {
+    //         alert("Redirecting to Home Page")
+    //         window.location.assign("index.html")
+    //     }, 1000)
+    // })
+
+
+    formEl.addEventListener("submit", registerUser)
+
+    async function registerUser(e) {
+        e.preventDefault()
+        try {
+            let Obj = {
+                fName: formEl.fname.value,
+                lName: formEl.lName.value,
+                number: formEl.num.value,
+                mail: formEl.email.value,
+                password: formEl.password.value,
+            }
+            let resp = await fetch(`http://localhost:3000/UserId`, {
+                method: "POST",
+                body: JSON.stringify(Obj),
+                header: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            let data = await resp.json()
+            console.log(data)
+            window.location.reload()
+        } catch (error) {
+            console.log(error)
         }
-        formSub.push(formObj)
-        localStorage.setItem("Account", JSON.stringify(formSub))
-        alert("Account Created Successfully")
-        setTimeout(function () {
-            alert("Redirecting to Home Page")
-            window.location.assign("index.html")
-        }, 1000)
-    })
+
+    }
+
+
+
+
+    // let formObj = {
+
+    // }
+    // formSub.push(formObj)
+    // sessionStorage.setItem("Account", JSON.stringify(formSub))
+    // alert("Account Created Successfully")
+    // setTimeout(function () {
+    //     alert("Redirecting to Home Page")
+    //     window.location.assign("index.html")
+    // }, 1000)
+    // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    async function Post() {
+        let Obj = {
+
+        }
+        let resp = await fetch(`http://localhost:3000/UserId`, {
+            method: "POST",
+            body: JSON.stringify(formObj),
+            header: {
+                'Content-Type': 'application/json'
+            }
+        })
+        let data = await resp.json()
+        console.log(data)
+        window.location.reload()
+    }
+
+
+
+
 
 
 
