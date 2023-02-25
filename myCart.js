@@ -16,7 +16,7 @@ let smallImageSection = document.querySelector("#Small_Img")
 
 async function fetchAndRenderSmallImages() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/3`)
+        let resp = await fetch(`http://localhost:3000/Products/1`)
         let data = await resp.json()
 
         renderSmallImagesSection(data.smallImages)
@@ -48,7 +48,7 @@ let BigImageSection = document.querySelector("#Big-Img")
 
 async function fetchAndRenderBigImages() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/3`)
+        let resp = await fetch(`http://localhost:3000/Products/1`)
         let data = await resp.json()
 
         // console.log(data)
@@ -79,7 +79,7 @@ let ContentSection = document.querySelector("#content")
 
 async function fetchAndRenderContent() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/3`)
+        let resp = await fetch(`http://localhost:3000/Products/1`)
         let data = await resp.json()
         // console.log(data)
         globalArr = data
@@ -192,15 +192,6 @@ function renderContentSection(title, price, images, id) {
 
     //! <---------------- Add to Cart popup ENDS------------->
 
-
-
-
-
-
-
-
-
-
     // * <div> Hide - show function
 
     let xtrabutton = document.getElementById("xtra")
@@ -246,8 +237,6 @@ function renderContentSection(title, price, images, id) {
 
 
 }
-
-
 
 
 function getContent(title, price, images, id) {
@@ -464,3 +453,28 @@ BtnINP.addEventListener("click", (element) => {
 
 
 
+// FROM NIKHIL's PAGE
+
+  // delete notification JS
+  let delnotification=document.getElementById('mybutton')
+  let crosssign=document.getElementById('deletemybtn')
+  crosssign.addEventListener('click',function(){
+    delnotification.remove()
+  })
+
+
+// scroll to top page js
+  let mybutton = document.getElementById("myBtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+  if ( document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+
+  document.documentElement.scrollTop = 0; 
+}
