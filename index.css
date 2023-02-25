@@ -47,6 +47,15 @@
   font-weight: 400;
 }
 
+#logo{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
+   #logo img{
+  height: 55px;
+  width: 200px;
+   }
+
 #navbar-left-div > div:nth-child(2):hover {
   text-decoration: underline;
   color: #222;
@@ -231,6 +240,151 @@
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
+
+/* Login popup */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 500ms ease-in-out;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    z-index: 10;
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+    height: 600px;
+    /* padding: 25px; */
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+#crossBtn{
+  display: none;
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    display: flex;
+
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+#leftPanel {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 550px;
+    padding: 30px;
+}
+
+#rightPanel {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 500px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+
+#divider {
+    border-right: 3px solid #666666;
+}
+
+#social {
+    display: flex;
+    border: 3px solid black;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    height: 50px;
+}
+#social p{
+  text-align: center;
+  margin-right: 50px;
+}
+#social i{
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+#rightPanel img {
+    width: 90%;
+}
+
+#Reset{
+  text-align: end;
+  font-size: 15px;
+}
+#or {
+    text-align: center;
+}
+
+#BlackBorder {
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+.height1{
+  height: 35px;
+  width: 100%;
+}
+.height2{
+  height: 35px;
+  width: 90%;
+}
+
+/* Login popup ENDS */
+
+
 #weedingCatDiv {
   display: flex;
 
@@ -1064,6 +1218,10 @@
   margin-top: 0px;
 }
 
+.imageReducer img{
+  width: 20px;
+}
+
 /* Links inside the dropdown */
 .dropdown-content1 a {
   color: #616161;
@@ -1181,3 +1339,125 @@
   color: black;
   text-orientation: upright;
 }
+
+
+
+/* footer code is here */
+#footer {
+  margin-top: 15px;
+  width: 100%;
+  background-color: #333;
+  color: #ccc;
+  padding-top: 72px;
+  padding-bottom: 30px;
+}
+
+#footer h3,
+h1 {
+  color: white;
+}
+
+.upper {
+  display: flex;
+  width: 74%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#footer hr {
+  width: 74%;
+  border: 1px solid #7e7e7e;
+}
+
+#big {
+  font-size: 120px;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+#company {
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#apple {
+  display: flex;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  cursor: pointer;
+  height: 50px;
+}
+
+#apple img {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#apple>div {
+  height: 100%;
+}
+
+#apple>div>h3 {
+  margin-top: 0;
+}
+
+.inner img {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  margin-top: 20px;
+  color: white;
+}
+
+#footer p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+#footer p:hover {
+  text-decoration: underline;
+}
+
+#hr1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#hr2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#infoof {
+  margin: auto;
+}
+
+.icons {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.icons:hover {
+  border: 2px solid blue;
+  border-radius: 5px;
+
+}
+
+/* Footer ends here */
