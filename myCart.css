@@ -3,12 +3,14 @@ body {
   height: 100%;
   font-family: "Crate Helvetica", "Helvetica Neue", Helvetica, Arial;
 }
+
 /* NAVBAR CSS Code by Nikhil */
 
 #nav1hr {
   margin-left: -10px;
   margin-right: -10px;
 }
+
 #navbar-left-div {
   display: flex;
   flex-direction: row;
@@ -21,14 +23,15 @@ body {
   margin-bottom: -7px;
 }
 
-#navbar-left-div > div {
+#navbar-left-div>div {
   padding-left: 20px;
 }
 
-#navbar-left-div > div > img {
+#navbar-left-div>div>img {
   height: 15px;
 }
-#navbar-left-div > div:nth-child(1) {
+
+#navbar-left-div>div:nth-child(1) {
   color: #222;
   font-weight: 400;
   font-size: 18px;
@@ -36,7 +39,8 @@ body {
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
 }
-#navbar-left-div > div:nth-child(1):hover {
+
+#navbar-left-div>div:nth-child(1):hover {
   color: #222;
   font-weight: 400;
   font-size: 18px;
@@ -45,13 +49,14 @@ body {
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
 }
-#navbar-left-div > div:nth-child(2) {
+
+#navbar-left-div>div:nth-child(2) {
   color: #616161;
   font-size: 18px;
   font-weight: 400;
 }
 
-#navbar-left-div > div:nth-child(2):hover {
+#navbar-left-div>div:nth-child(2):hover {
   text-decoration: underline;
   color: #222;
   font-weight: 400;
@@ -59,7 +64,8 @@ body {
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
 }
-#navbar-left-div > div:nth-child(3) {
+
+#navbar-left-div>div:nth-child(3) {
   margin-left: 20px;
   margin-top: 20px;
   height: 20px;
@@ -73,7 +79,7 @@ body {
   color: #616161;
 }
 
-#navbar-left-div > div:nth-child(3):hover {
+#navbar-left-div>div:nth-child(3):hover {
   margin-left: 20px;
   margin-top: 20px;
   height: 20px;
@@ -90,12 +96,13 @@ body {
   text-decoration-thickness: 6px;
 }
 
-#navbar-left-div > div:nth-child(4) {
+#navbar-left-div>div:nth-child(4) {
   color: #616161;
   font-style: Helvetica;
   font-size: 15px;
 }
-#navbar-left-div > div:nth-child(4):hover {
+
+#navbar-left-div>div:nth-child(4):hover {
   text-decoration: underline;
   color: #222;
 
@@ -103,29 +110,52 @@ body {
   text-underline-offset: 10px;
   text-decoration-thickness: 6.5px;
 }
+
 #navbar-right-div {
   display: flex;
   margin-top: -10px;
   margin-bottom: -7px;
   justify-content: space-evenly;
   height: 40px;
-
   width: 450px;
-
   margin-bottom: -25px;
+}
+
+#navbar-right-div p{
+  font-size: 14px;
 }
 
 #outerdiv {
   display: flex;
-
+  padding: 10px;
   justify-content: space-between;
   cursor: pointer;
+} 
+#outerdiv h4{
+  font-size: 13px;
 }
-#flag img{
+
+#flag img {
   width: 30px;
 }
 
+ /* #searchbardiv{
+
+   border: 2px solid red;
+   padding-left: 55px;
+ } */
+
+#logo{
+margin-top: 15px;
+margin-bottom: 15px;
+}
+ #logo img{
+height: 55px;
+width: 200px;
+ }
+
 #searchbar {
+  /* border: 2px solid red; */
   width: 250px;
   height: 30px;
   border: 1px black plain;
@@ -133,6 +163,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 #searchbar:focus {
   width: 250px;
   height: 30px;
@@ -143,6 +174,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 #searchbar-img {
   width: 40px;
   height: 20px;
@@ -150,6 +182,7 @@ body {
   margin-top: 30px;
   margin-bottom: -5px;
 }
+
 #all-login-divs {
   display: flex;
 
@@ -159,7 +192,8 @@ body {
   margin-top: 10px;
   margin-right: 35px;
 }
-#all-login-divs > div > img {
+
+#all-login-divs>div>img {
   width: 20px;
   margin-top: 15px;
 }
@@ -172,20 +206,24 @@ body {
   text-align: center;
   margin-top: -20px;
 }
+
 #searchbardiv {
   width: 300px;
   margin-left: 13px;
 }
+
 #companynamediv {
   font-size: xx-large;
 
   font-family: sans-serif;
 }
-#cart-img > div > img {
+
+#cart-img>div>img {
   /* height: 25px; */
   width: 30px;
   padding-right: 5px;
 }
+
 #cart-img {
   margin-right: 5px;
   display: flex;
@@ -196,11 +234,12 @@ body {
   /* margin-top: 15px; */
 }
 
-#heart-img > div > img {
+#heart-img>div>img {
   /* height: 25px; */
-  width:25px;
+  width: 25px;
   padding-right: 5px;
 }
+
 #heart-img {
   margin-right: 5px;
   display: flex;
@@ -217,6 +256,7 @@ body {
   margin-left: -3px;
   margin-right: 5px;
 }
+
 #ordersignin {
   display: flex;
   justify-content: space-around;
@@ -228,19 +268,21 @@ body {
   color: #222;
 }
 
-#ordersignin > div:nth-child(1):hover {
+#ordersignin>div:nth-child(1):hover {
   color: #616161;
 
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
-#ordersignin > div:nth-child(3):hover {
+
+#ordersignin>div:nth-child(3):hover {
   color: #616161;
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
+
 #weedingCatDiv {
   display: flex;
 
@@ -250,48 +292,58 @@ body {
   font-family: Helvetica;
   letter-spacing: 1px;
 }
-#weedingCatDiv > div:nth-child(1) {
+
+#weedingCatDiv>div:nth-child(1) {
   margin-left: 90px;
   font-weight: bolder;
 }
-#weedingCatDiv > div:nth-child(7) {
+
+#weedingCatDiv>div:nth-child(7) {
   margin-right: 100px;
 }
-#weedingCatDiv > div:nth-child(1):hover {
+
+#weedingCatDiv>div:nth-child(1):hover {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
-#weedingCatDiv > div:nth-child(2):hover {
+
+#weedingCatDiv>div:nth-child(2):hover {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
-#weedingCatDiv > div:nth-child(3):hover {
+
+#weedingCatDiv>div:nth-child(3):hover {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
-#weedingCatDiv > div:nth-child(4):hover {
+
+#weedingCatDiv>div:nth-child(4):hover {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
-#weedingCatDiv > div:nth-child(5):hover {
+
+#weedingCatDiv>div:nth-child(5):hover {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
-#weedingCatDiv > div:nth-child(6):hover {
+
+#weedingCatDiv>div:nth-child(6):hover {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
-#weedingCatDiv > div:nth-child(7):hover {
+
+#weedingCatDiv>div:nth-child(7):hover {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
 }
+
 #secondNavBar {
   display: flex;
 
@@ -307,6 +359,7 @@ body {
   font-size: 14px;
   font-family: Helvetica;
 }
+
 /* Code for Navbar ENDS here */
 
 
@@ -320,9 +373,11 @@ body {
   margin-top: -15px;
   padding-right: 5px;
 }
+
 .dropdown:hover {
   color: #616161;
 }
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -333,12 +388,14 @@ body {
   z-index: 1;
   margin-top: 60px;
 }
+
 .dropbtn:hover {
   color: #616161;
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
 }
+
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #616161;
@@ -347,11 +404,13 @@ body {
 
   display: block;
 }
+
 .dropdown-content a:hover {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
 }
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
@@ -361,6 +420,7 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 #locationnavbar {
   width: 100%;
   padding-top: 10px;
@@ -368,14 +428,17 @@ body {
   border: 1px red solid;
   margin-bottom: -38px;
 }
+
 .dropdown1 {
   position: relative;
   display: inline-block;
   margin-left: -10px;
 }
+
 .dropdown1:hover {
   color: #fff;
 }
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content1 {
   display: none;
@@ -395,11 +458,13 @@ body {
 
   display: block;
 }
+
 .dropdown-content1 a:hover {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
 }
+
 /* Change color of dropdown links on hover */
 .dropdown-content1 a:hover {
   background-color: #f1f1f1;
@@ -409,15 +474,18 @@ body {
 .dropdown1:hover .dropdown-content1 {
   display: block;
 }
+
 #dropdowncontent1 {
   display: flex;
   flex-direction: row;
 }
-#dropdowncontent1img > img {
+
+#dropdowncontent1img>img {
   width: 90%;
   margin-left: 15px;
   margin-top: 0px;
 }
+
 #dropdowncontent1text {
   width: 450px;
 }
@@ -428,6 +496,21 @@ body {
 #ExtraTOPLinks a {
   color: black;
   padding-right: 10px;
+}
+
+.NavFlex {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid red;
+   */
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+
+.borderRight{
+  border: 2px solid black;
+  margin-top: 18px;
+  height: 24px;
 }
 
 
@@ -1123,6 +1206,7 @@ img {
   right: 450px;
   display: flex;
 }
+
 #deletemybtn {
   margin-left: -20px;
   color: #fff;
@@ -1130,7 +1214,8 @@ img {
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
   bottom: -2px;
   right: -4px;
@@ -1155,6 +1240,7 @@ img {
   background-color: #616161;
   color: #fff;
 }
+
 #topbtnlogo {
   width: 100%;
 }
@@ -1183,12 +1269,14 @@ img {
   display: flex;
   text-align: center;
 }
+
 #feedback-text {
   writing-mode: vertical-rl;
   text-decoration: none;
   color: black;
   text-orientation: upright;
 }
+
 #feedback:hover {
   position: fixed;
   bottom: 190px;
@@ -1221,7 +1309,7 @@ img {
 
 
 /* footer code is here */
-#footer{
+#footer {
   margin-top: 15px;
   width: 100%;
   background-color: #333;
@@ -1229,35 +1317,42 @@ img {
   padding-top: 72px;
   padding-bottom: 30px;
 }
-#footer h3,h1{
+
+#footer h3,
+h1 {
   color: white;
 }
 
-.upper{
+.upper {
   display: flex;
   width: 74%;
   justify-content: space-between;
   margin: auto;
 }
-#footer hr{
+
+#footer hr {
   width: 74%;
   border: 1px solid #7e7e7e;
 }
-#big{
+
+#big {
   font-size: 120px;
   margin-top: 0;
   margin-bottom: 0;
   cursor: pointer;
 }
-#company{
+
+#company {
   font-size: 42px;
   cursor: pointer;
 }
-.inner{
+
+.inner {
   display: flex;
   justify-content: space-between;
 }
-#apple{
+
+#apple {
   display: flex;
   border: 2px solid white;
   background-color: black;
@@ -1269,18 +1364,22 @@ img {
   cursor: pointer;
   height: 50px;
 }
-#apple img{
+
+#apple img {
   background-color: white;
   border-radius: 10px;
   margin-top: 5px;
 }
-#apple>div{
+
+#apple>div {
   height: 100%;
 }
-#apple>div>h3{
+
+#apple>div>h3 {
   margin-top: 0;
 }
-.inner img{
+
+.inner img {
   width: 50px;
   height: 50px;
   margin-right: 8px;
@@ -1288,34 +1387,40 @@ img {
   color: white;
 }
 
-#footer p{
+#footer p {
   margin-bottom: 5px;
   font-size: 14px;
   margin-top: 0px;
   cursor: pointer;
 }
-#footer p:hover{
+
+#footer p:hover {
   text-decoration: underline;
 }
-#hr1{
+
+#hr1 {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-#hr2{
+
+#hr2 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-#infoof{
+
+#infoof {
   margin: auto;
 }
-.icons{
+
+.icons {
   width: 35px;
   height: 35px;
   margin-right: 5px;
   margin-bottom: 15px;
   cursor: pointer;
 }
-.icons:hover{
+
+.icons:hover {
   border: 2px solid blue;
   border-radius: 5px;
 
