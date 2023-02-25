@@ -9,7 +9,7 @@
     "Products": [
     {
       "id":1,
-      "title":"Murirfield Sculptual Metal",
+      "title":"Rattan Chair",
       "price":"1,699.00",
       "image":"https://cb.scene7.com/is/image/Crate/MuirfieldAccentChairSOSSS23/$web_plp_card$/220908114659/muirfield-sculptural-metal-accent-chair.jpg",
       "type":"Metal",
@@ -19,7 +19,7 @@
 
     {
       "id":2,
-      "title":"Ambie Walnut Wood",
+      "title":"Lounge Chair",
        "price":"1,299.00",
       "image": "https://cb.scene7.com/is/image/Crate/AmbieAccentChairSOSSS23/$web_plp_card$/221006170251/ambie-walnut-wood-accent-chair-by-jake-arnold.jpg",
        "type":"Wood",
@@ -28,7 +28,7 @@
     
     {
       "id":3,
-      "title":"Rumford Accent Chair",
+      "title":"Swivel Chair",
       "price":"1,399.00",
       "image":"https://cb.scene7.com/is/image/Crate/RumfordAccentChairSOSSS23/$web_plp_card$/230112153252/rumford-accent-chair-by-jake-arnold.jpg",
       "Newarrival":"New Arrival",
@@ -38,7 +38,7 @@
      
     {
       "id":4,
-      "title":"Petrie Velvet Mide-Century Chair",
+      "title":"Lounge Chair",
       "price":"1,899.00",
        "image":"https://cb.scene7.com/is/image/Crate/PetrieChairCOSOSSS23_3D/$web_plp_card$/230127143453/petrie-velvet-mid-century-chair.jpg",
       "Newarrival":"New Arrival",
@@ -48,7 +48,7 @@
     
     {
       "id":5,
-      "title":"Pose Natural Wood and Leaher Accent Chair",
+      "title":"Rattan Chair",
       "price":"1,599.00",
       "image":"https://cb.scene7.com/is/image/Crate/PoseNatLthrChairSOSSS23/$web_plp_card$/230123100251/pose-leather-chair--natural.jpg",
       "Newarrival":"New Arrival",
@@ -61,13 +61,13 @@
       "title":"Leather Chair",
       "price":"1,699.00",
       "image":"https://cb.scene7.com/is/image/Crate/WellsLthrChairCynSOSSF20_1x1/$web_plp_card$/200720144738/wells-leather-tuxedo-chair.jpg",
-      "type":"Fabric",
-      "color":"Grey"
+      "type":"Leather",
+      "color":"Brown"
     },
     
     {
       "id":7,
-      "title":"lounge Chair",
+      "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/DrewSwivelChairSmlBDSOSSS22_3D/$web_plp_card$/211004154256/new-family.jpg",
       "price":"999.00",
        "Newarrival":"New Arrival",
@@ -77,32 +77,32 @@
    
     {
       "id":8,
-      "title":"Sculpt Fabric Chair",
+      "title":"Recliner Chair",
       "price":"1,199.00",
       "image":"https://cb.scene7.com/is/image/Crate/ValenAccentChairCvTaupeSOSSS23/$web_plp_card$/221130112341/valen-swivel-accent-chair.jpg",
       "Newarrival":"New Arrival",
       "type":"Fabric",
-      "color":"orange"
+      "color":"Grey"
     },
 
     {
       "id":9,
-      "title":" Wood Chair",
+      "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/FieldsCaneBckAcntChairChrSHS20_1x1/$web_plp_card$/200128150407/fields-chair-charcoal.jpg",
       "price":"1,799.00",
-      "type":"wood",
-      "color":"white"
+      "type":"Metal",
+      "color":"black"
     },
     
     {
       "id":10,
-      "title":"Rattan Chair",
+      "title":"Leather Chair",
       
       "image":"https://cb.scene7.com/is/image/Crate/WellsLthrChairCynSOSSF20_1x1/$web_plp_card$/200720144738/wells-leather-tuxedo-chair.jpg",
       "price":"599.00",
       "Newarrival":"New Arrival",
-      "type":"wood",
-      "color":"white"
+      "type":"Leather",
+      "color":"Brown"
     },
     
     {
@@ -112,7 +112,7 @@
       "price":"1,599.00",
       "Newarrival":"New Arrival",
       "type":"Fabric",
-      "color":"Pink"
+      "color":"Grey"
     },
 
     {
@@ -120,16 +120,16 @@
       "title":"Lounge Chair",
       "image":"https://cb.scene7.com/is/image/Crate/RodinChairSOSSF22/$web_plp_card$/220722135055/rodin-white-boucle-dining-chair-by-athena-calderone.jpg",
       "price":"1,799.00",
-      "type":"Leather",
-      "color":"Brown"
+      "type":"Metal",
+      "color":"white"
     },
 
     {
       "id":13,
-      "title":"Rattan Chair",
+      "title":"Chair and a Half",
       "image":"https://cb.scene7.com/is/image/Crate/CrawfordChairSOSSS23/$web_plp_card$/230112113322/crawford-accent-chair.jpg",
       "price":"399.00",
-      "type":"Metal",
+      "type":"Fabric",
       "color":"Brown"
     },
     {
@@ -137,31 +137,31 @@
       "title":"Recliner Chair",
       "image":"https://cb.scene7.com/is/image/Crate/CrawfordSlpChairWBoxPltsSOSSS23/$web_plp_card$/230123121935/crawford-slipcovered-accent-chair-with-box-pleated-skirt.jpg",
       "price":"2,399.00",
-      "type":"Metal",
-      "color":"Blue"
+      "type":"Fabric",
+      "color":"Pink"
     },
     {
       "id":15,
-      "title":"Swivel Chair",
+      "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/PollyChairCblstnJuteSHS19_3D_1x1/$web_plp_card$/190725130347/polly-ivory-accent-chair.jpg",
       "price":"2,899.00",
       "type":"Metal",
-      "color":"Blue"
+      "color":"white"
     },
     {
       "id":16,
-      "title":"Swivel Chair",
+      "title":"Recliner Chair",
       "image":"https://cb.scene7.com/is/image/Crate/LoungIILthrSwvChrIronSSS23/$web_plp_card$/230217111705/lounge-leather-swivel-chair.jpg",
       "price":"2,899.00",
-      "type":"Metal",
-      "color":"Blue"
+      "type":"Leather",
+      "color":"Brown"
     },
     {
       "id":17,
-      "title":"Rattan Chair",
+      "title":"Lounge Chair",
       "image":"https://cb.scene7.com/is/image/Crate/CavettLthrChrSumatraSSS20_1x1/$web_plp_card$/210831153848/cavett-leather-wood-frame-chair.jpg",
       "price":"399.00",
-      "type":"Metal",
+      "type":"Wood",
       "color":"Brown"
     },
     {
@@ -169,33 +169,33 @@
       "title":"Recliner Chair",
       "image":"https://cb.scene7.com/is/image/Crate/PacificDChairBCSOSSF22_3D/$web_plp_card$/220825135633/pacific-ch-dd.jpg",
       "price":"2,399.00",
-      "type":"Metal",
-      "color":"Blue"
+      "type":"Fabric",
+      "color":"white"
     },
     {
       "id":19,
-      "title":"Swivel Chair",
+      "title":"Chair and a Half",
       "image":"https://cb.scene7.com/is/image/Crate/LoungeChairHlfTSSOSSS23_3D/$web_plp_card$/221107112746/lounge-chair-and-a-half.jpg",
       "price":"2,899.00",
-      "type":"Metal",
-      "color":"Blue"
+      "type":"Fabric",
+      "color":"Grey"
     },
     {
       "id":20,
       "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/NoraTubChairSOSSF20/$web_plp_card$/201109174331/nora-tub-chair.jpg",
       "price":"2,899.00",
-      "type":"Metal",
-      "color":"Blue"
+      "type":"Fabric",
+      "color":"Pink"
     },
 
     {
       "id":21,
-      "title":"Rattan Chair",
+      "title":"Lounge Chair",
       "image":"https://cb.scene7.com/is/image/Crate/HarperShrlngAccentChairSOSSF21/$web_plp_card$/210818132407/harper-shearling-accent-chair.jpg",
        "price":"399.00",
-      "type":"Metal",
-      "color":"Brown"
+      "type":"Wood",
+      "color":"Pink"
     },
     
     
@@ -205,24 +205,24 @@
       "image":"https://cb.scene7.com/is/image/Crate/FieldsWhtwshWhtChrSOSSF21/$web_plp_card$/220330135412/fields-cane-back-white-wash-accent-chair.jpg",
       "price":"399.00",
       "type":"Metal",
-      "color":"Brown"
+      "color":"white"
     },
     
     {
       "id":23,
-      "title":"Swivel Chair",
+      "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/PoseGryWshLthrChairSOSSS23/$web_plp_card$/230112131324/pose-leather-chair--grey-wash.jpg",
       "price":"2,899.00",
       "type":"Metal",
-      "color":"Blue"
+      "color":"Green"
     },
     {
       "id":24,
-      "title":"Rattan Chair",
+      "title":"Lounge Chair",
       "image":"https://cb.scene7.com/is/image/Crate/OjaiUphWFAcntChrBCSOSSS22_3D/$web_plp_card$/220118124451/ojai-upholstered-wood-frame-accent-chair.jpg",
       "price":"699.00",
       "type":"Wood",
-      "color":"Brown"
+      "color":"white"
     },
     {
       "id":25,
@@ -230,15 +230,15 @@
       "image":"https://cb.scene7.com/is/image/Crate/CoronadoRattanAccntChrSOSSS22/$web_plp_card$/211005124726/coronado-chair.jpg",
       "price":"2,199.00",
       "type":"Wood",
-      "color":"White"
+      "color":"Brown"
     },
     {
       "id":26,
-      "title":"Swivel Chair",
+      "title":"Lounge Chair",
       "image":"https://cb.scene7.com/is/image/Crate/OjaiShrlngWdFrmAccntChrSOSSS22/$web_plp_card$/211213154653/ojai-accent-chair-shearling.jpg",
       "price":"1,299.00",
-      "type":"Metal",
-      "color":"Brown",
+      "type":"Wood",
+      "color":"pink",
       "Newarrival":"New Arrival"
     },
     {
@@ -247,43 +247,43 @@
       "image":"https://cb.scene7.com/is/image/Crate/ValenAccentChairCvCamelSOSSS23/$web_plp_card$/221130112341/valen-swivel-accent-chair.jpg",
       "price":"1,799.00",
       "type":"Fabric",
-      "color":"Grey"
+      "color":"Brown"
     },
     {
       "id":28,
-      "title":"Swivel Chair",
+      "title":"Chair and a Half",
       "image":"https://cb.scene7.com/is/image/Crate/LeisurePowerReclinerChrSOSSS21/$web_plp_card$/201222173437/leisure-power-recliner-chair.jpg",
-      "price":"999.00",
+      "price":"9899.00",
       "type":"Wood",
-      "color":"white"
+      "color":"Grey"
     },
 
     {
       "id":29,
-      "title":"Chair and a Half",
+      "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/FieldsWhtwshNatChrSOSSF21/$web_plp_card$/220330135434/fields-cane-back-white-wash-and-natural-accent-chair.jpg",
        "price":"1,279.00",
-      "type":"Fabric",
-      "color":"Grey"
+      "type":"Metal",
+      "color":"white"
     },
     
     
     {
       "id":30,
-      "title":"Rattan Chair",
+      "title":"Recliner Chair",
       "image":"https://cb.scene7.com/is/image/Crate/LoungeDChairNHalfTCSOSSS23_3D/$web_plp_card$/221013155339/lounge-deep-chair-and-a-half.jpg",
       "price":"399.00",
-      "type":"Metal",
-      "color":"Brown"
+      "type":"Fabric",
+      "color":"white"
     },
 
     {
       "id":31,
-      "title":"Chair and a Half",
+      "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/CrawfordSlpChairSOSSS23/$web_plp_card$/230123121932/crawford-slipcover-chair.jpg",
        "price":"1,279.00",
       "type":"Fabric",
-      "color":"Grey"
+      "color":"pink"
     },
     
     
@@ -293,7 +293,7 @@
       "image":"https://cb.scene7.com/is/image/Crate/JeannieAccentChairSOSSF21/$web_plp_card$/210924125317/jeannie-cane-accent-chair.jpg",
       "price":"399.00",
       "type":"Metal",
-      "color":"Brown"
+      "color":"black"
     },
     
     {
@@ -302,17 +302,17 @@
       "image":"https://cb.scene7.com/is/image/Crate/FieldsCaneBckBlckAcntChrWhtSOSSS21/$web_plp_card$/200928114307/fields-cane-black-and-white-chair.jpg",
        "price":"399.00",
       "type":"Metal",
-      "color":"Brown"
+      "color":"white"
     },
     
     
     {
       "id":34,
-      "title":"Rattan Chair",
+      "title":"Chair and a Half",
       "image":"https://cb.scene7.com/is/image/Crate/WellsFChairNGSOSSF21_3D/$web_plp_card$/220823173358/wells-chair-with-natural-leg-finish.jpg",
       "price":"399.00",
-      "type":"Metal",
-      "color":"Brown"
+      "type":"Fabric",
+      "color":"Grey"
     },
     
     {
@@ -320,32 +320,32 @@
       "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/RixbyPowerReclinerNvy3QSSF22/$web_plp_card$/220408105406/rixby-navy-power-recliner-chair.jpg",
       "price":"2,899.00",
-      "type":"Metal",
+      "type":"Velvet",
       "color":"Blue"
     },
     {
       "id":36,
-      "title":"Rattan Chair",
+      "title":"Chair and a Half",
       "image":"https://cb.scene7.com/is/image/Crate/GatherPTSwvlChrMCSOSSF20_3D/$web_plp_card$/200825154451/gather-petite-swivel-chair.jpg",
       "price":"699.00",
-      "type":"Wood",
-      "color":"Brown"
+      "type":"Fabric",
+      "color":"Grey"
     },
     {
       "id":37,
       "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/SculptChairDkBlueSOSSF22_3D/$web_plp_card$/220825160602/sculpt-dark-blue-velvet-accent-chair.jpg",
       "price":"2,199.00",
-      "type":"Wood",
-      "color":"White"
+      "type":"Velvet",
+      "color":"Blue"
     },
     {
       "id":38,
       "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/InfinitSwivelChairVLSOSSF20_3D/$web_plp_card$/201008144353/infiniti-swivel-chair.jpg",
       "price":"1,299.00",
-      "type":"Metal",
-      "color":"Brown",
+      "type":"Velvet",
+      "color":"Blue",
       "Newarrival":"New Arrival"
     },
     {
@@ -353,16 +353,16 @@
       "title":"Recliner Chair",
       "image":"https://cb.scene7.com/is/image/Crate/PelleLthrRclnrIronSOSSS22/$web_plp_card$/220309112247/pelle-leather-accent-chair.jpg",
       "price":"1,799.00",
-      "type":"Fabric",
-      "color":"Grey"
+      "type":"Leather",
+      "color":"Brown"
     },
     {
       "id":40,
       "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/ValenAccentChairAlpBeigeSOSSS23/$web_plp_card$/230124151339/valen-swivel-accent-chair.jpg",
       "price":"999.00",
-      "type":"Wood",
-      "color":"white"
+      "type":"Fabric",
+      "color":"pink"
     },
 
     {
@@ -387,21 +387,21 @@
     
     {
       "id":43,
-      "title":"Chair and a Half",
+      "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/InfinitiSwvlChairOatSOSSF20_3D/$web_plp_card$/210315122449/infiniti-swivel-chair.jpg",
        "price":"1,279.00",
-      "type":"Fabric",
-      "color":"Grey"
+      "type":"Velvet",
+      "color":"white"
     },
     
     
     {
       "id":44,
-      "title":"Rattan Chair",
+      "title":"Swivel Chair",
       "image":"https://cb.scene7.com/is/image/Crate/BlakeGryChrNSnowCshSHS15_1x1/$web_plp_card$/220913132217/blake-grey-wash-lounge-chair-with-cushion.jpg",
-      "price":"399.00",
-      "type":"Metal",
-      "color":"Brown"
+      "price":"199.00",
+      "type":"Fabric",
+      "color":"Grey"
     }
     ,
 
@@ -409,36 +409,36 @@
       "id":45,
       "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/PoseChairNatural3QSSF21_3D/$web_plp_card$/210514123408/pose-natural-accent-chair.jpg",
-      "price":"399.00",
-      "type":"Metal",
-      "color":"Brown"
+      "price":"4,799.00",
+      "type":"Wood",
+      "color":"white"
     },
 
     {
       "id":46,
       "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/PacificLthrChairSOSSF22/$web_plp_card$/220817112253/pacific-chair-leather.jpg",
-      "price":"399.00",
-      "type":"Metal",
-      "color":"Brown"
+      "price":"799.00",
+      "type":"Wood",
+      "color":"white"
     },
     
     {
       "id":47,
       "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/MichiChairSOSSS22/$web_plp_card$/211213154021/michi-chair.jpg",
-      "price":"399.00",
+      "price":"599.00",
       "type":"Metal",
-      "color":"Brown"
+      "color":"white"
     }
     ,
 
     {
       "id":48,
-      "title":"Rattan Chair",
+      "title":"Chair and a Half",
       "image":"https://cb.scene7.com/is/image/Crate/TheSensorioChairSOSSF22/$web_plp_card$/220429152248/sensorio-swoop-arm-velvet-accent-chair-by-athena-calderone.jpg",
-      "price":"399.00",
-      "type":"Metal",
+      "price":"1,399.00",
+      "type":"Fabric",
       "color":"Brown"
     },
 
@@ -446,7 +446,7 @@
       "id":49,
       "title":"Rattan Chair",
       "image":"https://cb.scene7.com/is/image/Crate/TajLeatherStrapChairSSS20_1x1/$web_plp_card$/200521090249/taj-leather-strap-chair.jpg",
-      "price":"399.00",
+      "price":"599.00",
       "type":"Metal",
       "color":"Brown"
     }
@@ -458,7 +458,7 @@
       "image":"https://cb.scene7.com/is/image/Crate/DessauChairMCSOSSF22_3D/$web_plp_card$/220502111431/dessau-boucle-accent-chair-with-chrome-frame.jpg",
       "price":"399.00",
       "type":"Metal",
-      "color":"Brown"
+      "color":"Grey"
     }
     
     

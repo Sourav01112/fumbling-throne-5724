@@ -1,12 +1,20 @@
+.card img{
+    cursor: pointer;
+
+}
+.card img:hover{
+    transform: scaleX(-1);
+}
+
 #offer{
+    
     display: flex;
     letter-spacing: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-between;
     border-bottom: 2px solid #ced2d8;
-    
+   
 }
-
 .div1{
    margin-left: 120px;
 }
@@ -41,8 +49,16 @@
     margin-left: 10px;
     margin-top: 0%;
 }
-
-
+#Filter{
+    display: flex;
+    text-align: center;
+}
+#Filter{
+    margin-left: 10px;
+}
+.filter1{
+   border: 2px solid red;
+}
 .filter{
     background-color: white;
     color: #110e0e;
@@ -52,8 +68,25 @@
     border: 1px solid rgb(91, 89, 89);
     margin-left: 10px;
     cursor: pointer;
+    width: fit-content;
 }
-
+.filter:hover{
+    background-color: whitesmoke;
+}
+.filter1{
+    background-color: white;
+    color: #110e0e;
+    font-weight: bold;
+    padding: 5px 30px;
+    letter-spacing: 1px;
+    border: 1px solid rgb(91, 89, 89);
+    margin-left: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+.filter1:hover{
+    background-color: whitesmoke;
+}
 button:hover {
     background-color: #e0e0e0;
     border: 1px solid rgb(91, 89, 89);
@@ -80,13 +113,17 @@ button:hover {
     border: 1px solid rgb(91, 89, 89);
     border-radius:3px ;
     color: rgb(241, 231, 231);
-    margin-left: 3px;
+    margin-left: 10px;
     cursor: pointer;
+    width: 80px;
+    padding: 10px;
 }
 .view:hover{
-   background-color: rgb(78, 75, 75);
+   background-color: rgb(50, 50, 50);
+   border: solid;
 }
 .relevant{
+
     padding: 5px 10px;
     background-color: white;
     border: 1px solid rgb(91, 89, 89);
@@ -94,9 +131,38 @@ button:hover {
     float: right;
     margin-right: 10px;
     cursor: pointer;
-
+    margin-top: -38px;
+    position:relative;
+    
 }
-.relevant:hover{
+.dropdown_reve{
+    position: absolute;
+    background-color: #efe8e8;
+    width: 145px;
+    height: auto;
+    right:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    margin-top: -8px;
+    display: none;
+}
+.dropdown_reve>div{
+    width: 90%;
+    padding: 10px ;
+    text-align: center;
+    
+}
+.dropdown_reve a{
+    color: black;
+    text-decoration: none;
+}
+#relevant:hover .dropdown{
+    display: flex;
+}
+.relevant:hover {
+ 
    border-style:dotted;
    text-decoration: underline;
    background-color: white;
@@ -132,7 +198,6 @@ gap: 5px;
     width: 95%;
     margin-left: 5px;
 }
-
 #append{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -143,11 +208,22 @@ gap: 5px;
    width: 365px;
    margin-bottom: 10px;
 }
-
 #append div{
     font-size: 16px;
     font-family: var(--webfont-primary,sans-serif);
     color: #222;
     font-weight: 400;
     margin-bottom: 100px;
+}
+#append div h5{
+
+    margin-left: 10px;
+}
+#append div span{
+    margin-left: 10px;
+}
+#border{
+    border-right: 2px solid rgb(50, 50, 50);
+    height: 30px;
+    margin-top: 20px;
 }
