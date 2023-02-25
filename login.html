@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4b119fb14c.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <style>
+        .topBorder {
+            /* border: 1px solid black; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #topNav {
+            display: flex;
+            /* border: 2px solid red; */
+            width: 450px;
+            height: 40px;
+            justify-content: space-between;
+            margin-left: 32px;
+        }
+
+        #topNav>h1 {
+            font-size: 18px;
+        }
+
+        .hori {
+            border-bottom: 1px solid #666666;
+        }
+
+        #square {
+            /* border: 2px solid black; */
+            height: 21px;
+            width: 39px;
+        }
+
+        .topRightNav {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .topRightNav>h1 {
+            font-size: 15px;
+        }
+
+        .searchNav {
+            display: flex;
+            /* border: 2px solid red; */
+            height: 92px;
+            justify-content: space-between;
+        }
+
+        .searchNav>div:nth-child(2)>img {
+            /* height: 120px; */
+            width: 250px;
+            margin-right: 200px;
+            margin-top: 12px;
+        }
+
+        #searchInp {
+            width: 385px;
+            height: 46px;
+            /* margin-left: 32px; */
+            /* margin-top: 35px; */
+            margin-bottom: 10px;
+            border: none;
+        }
+
+        .searchNav>div:nth-child(1) {
+            border: 1px solid #666666;
+            height: 50px;
+            width: 440px;
+            margin-left: 32px;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        .maginifying {
+            font-size: 26px;
+            /* margin-left: 5px; */
+        }
+
+
+        /* Login popup */
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: 500ms ease-in-out;
+            border: 1px solid black;
+            border-radius: 10px;
+            z-index: 10;
+            background-color: white;
+            width: 500px;
+            max-width: 80%;
+        }
+
+        .modal.active {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .modal-header {
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+
+        .modal-header .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .modal-header .close-button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .modal-body {
+            padding: 10px 15px;
+        }
+
+        #overlay {
+            position: fixed;
+            opacity: 0;
+            transition: 500ms ease-in-out;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+            pointer-events: none;
+        }
+
+        #overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="topBorder">
+
+        <div id="topNav">
+            <h1>Glitz Global</h1>
+            <h1>Glitz Kids</h1>
+            <h1 id="square">CB2</h1>
+            <h1>Hudson | Grace</h1>
+        </div>
+
+        <div class="topRightNav">
+            <h1>Earn 10% back in Reward Dollars</h1>
+            <h1>Learn How --> </h1>
+        </div>
+
+    </div>
+    <div class="hori"></div>
+    <div class="searchNav">
+        <div>
+            <input id="searchInp" type="text" placeholder="What can we help you find?">
+            <span class="maginifying"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+        </div>
+
+        <div>
+            <img src="./logo1.png" alt="">
+        </div>
+
+        <div>
+            <h1 data-modal-target="#modal">orders & Sign In</h1>
+
+
+
+
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title"> Example modal</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis
+                    quaerat natus nobis voluptate, non delectus. Nemo est beatae minima, voluptatibus eligendi labore
+                    suscipit ipsum cum, explicabo quam quos aperiam aspernatur optio dignissimos magni sapiente? Ducimus
+                    sed dignissimos pariatur laborum natus eius veniam, distinctio nobis cumque ipsam debitis repellat
+                    rerum voluptatibus sapiente molestiae doloribus, placeat in officia fugit quod recusandae!
+                    <input type="text">
+                    <input id="submit" type="submit">
+                </div>
+            </div>
+            <div id="overlay"></div>
+
+
+            
+        </div>
+
+
+
+    </div>
+
+
+</body>
+<script>
+
+    //   pop up 
+
+    const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    const closeModalButtons = document.querySelectorAll('[data-close-button]')
+    const overlay = document.getElementById('overlay')
+
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = document.querySelector(button.dataset.modalTarget)
+            openModal(modal)
+        })
+    })
+
+    overlay.addEventListener('click', () => {
+        const modals = document.querySelectorAll('.modal.active')
+        modals.forEach(modal => {
+            closeModal(modal)
+        })
+    })
+
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal')
+            closeModal(modal)
+        })
+    })
+
+    function openModal(modal) {
+        if (modal == null) return
+        modal.classList.add('active')
+        overlay.classList.add('active')
+    }
+
+    function closeModal(modal) {
+        if (modal == null) return
+        modal.classList.remove('active')
+        overlay.classList.remove('active')
+    }
+
+
+    submitInp = document.querySelector("#submit")
+    submitInp.addEventListener("click", () => {
+        window.location.reload()
+    })
+</script>
+
+</html>

@@ -948,107 +948,236 @@
   margin-left: -8px;
   margin-right: -8px;
 }
-#img14text {
+#img14img {
   width: 100%;
 }
 #video6 {
   width: 100%;
 }
+#img14text1 {
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  font-size: 20px;
+}
+#img14text2 {
+  position: absolute;
+  top: 550px;
+  left: 200px;
+  font-size: 30px;
+}
+#img14text3 {
+  position: relative;
 
-/* footer css is here */
-#footer{
-  width: 100%;
-  background-color: #333;
-  color: #ccc;
-  padding-top: 72px;
-  padding-bottom: 30px;
+  top: 620px;
+  left: 100px;
+  font-size: 18px;
+  width: 550px;
 }
-#footer h3,h1{
-  color: white;
-}
+#img14btn {
+  position: relative;
+  bottom: 85px;
+  left: 250px;
+  background-color: #222;
+  color: #fff;
 
-.upper{
-  display: flex;
-  width: 74%;
-  justify-content: space-between;
-  margin: auto;
-}
-#footer hr{
-  width: 74%;
-  border: 1px solid #7e7e7e;
-}
-#big{
-  font-size: 120px;
-  margin-top: 0;
-  margin-bottom: 0;
-  cursor: pointer;
-}
-#company{
-  font-size: 42px;
-  cursor: pointer;
-}
-.inner{
-  display: flex;
-  justify-content: space-between;
-}
-#apple{
-  display: flex;
-  border: 2px solid white;
-  background-color: black;
-  border-radius: 8px;
-  color: white;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  cursor: pointer;
+  font-size: 15px;
+  width: 250px;
   height: 50px;
+  letter-spacing: 2px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#apple img{
-  background-color: white;
-  border-radius: 10px;
+
+/* card pop up css on hovering */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: -15px;
+  padding-right: 5px;
+}
+.dropdown:hover {
+  color: #616161;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 60px;
+}
+.dropbtn:hover {
+  color: #616161;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #616161;
+  padding: 10px 13px;
+  text-decoration: none;
+
+  display: block;
+}
+.dropdown-content a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#locationnavbar {
+  width: 100%;
+  padding-top: 10px;
+  margin-right: -10px;
+  border: 1px red solid;
+  margin-bottom: -38px;
+}
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+  margin-left: -10px;
+}
+.dropdown1:hover {
+  color: #fff;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 560px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 0px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+  color: #616161;
+  padding: 10px 13px;
+  text-decoration: none;
+
+  display: block;
+}
+.dropdown-content1 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+#dropdowncontent1 {
+  display: flex;
+  flex-direction: row;
+}
+#dropdowncontent1img > img {
+  width: 90%;
+  margin-left: 15px;
+  margin-top: 0px;
+}
+#dropdowncontent1text {
+  width: 450px;
+}
+
+.feedback {
+  background-color: #222;
+  color: white;
+  padding: 20px 20px;
+  letter-spacing: 2px;
+  width: 400px;
+  cursor: pointer;
+}
+
+#mybutton {
+  cursor: pointer;
+  position: fixed;
+  bottom: -4px;
+  right: 450px;
+  display: flex;
+}
+#deletemybtn {
+  margin-left: -20px;
+  color: #fff;
   margin-top: 5px;
 }
-#apple>div{
-  height: 100%;
-}
-#apple>div>h3{
-  margin-top: 0;
-}
-.inner img{
-  width: 50px;
-  height: 50px;
-  margin-right: 8px;
-  margin-top: 20px;
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: -2px;
+  right: -4px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #616161;
+  cursor: pointer;
+  padding: 15px;
+
+  font-size: 12px;
+  width: 49px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
 
-#footer p{
-  margin-bottom: 5px;
-  font-size: 14px;
-  margin-top: 0px;
+#myBtn:hover {
+  background-color: #616161;
+  color: #fff;
+}
+#topbtnlogo {
+  width: 100%;
+}
+
+#feedback {
+  position: fixed;
+  bottom: 190px;
+  right: -5px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  letter-spacing: 2px;
+  color: #616161;
   cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  width: 30px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+  margin-bottom: 3px;
+  display: flex;
+  text-align: center;
 }
-#footer p:hover{
-  text-decoration: underline;
-}
-#hr1{
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-#hr2{
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-#infoof{
-  margin: auto;
-}
-.icons{
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-.icons:hover{
-  border: 2px solid blue;
-  border-radius: 5px;
+#feedback-text {
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  color: black;
+  text-orientation: upright;
 }

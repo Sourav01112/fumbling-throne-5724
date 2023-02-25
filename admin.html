@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./LOGO icon.png" type="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Admin Account</title>
+    <style>
+        body {
+            background-image: url(./admin\ Background\ IMG.jpg);
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .container {
+            display: flex;
+        }
+
+        .leftPanel {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            width: 220px;
+            height: 619px;
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        .leftPanel li {
+            list-style: none;
+            padding: 15px;
+            margin-right: 35px;
+        }
+
+        .leftPanel a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo{
+            width: 45%;
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+        }
+        #searchNav {
+            /* border: 1px solid black; */
+            /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px; */
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            display: flex;
+            width: 1157px;
+            height: 56px;
+        }
+
+        #searchNav input {
+            margin-top: 5px;
+            text-align: center;
+            width: 554px;
+            height: 36px;
+            outline: none;
+            border-width: 0px;
+            background-color: #E0E0E0 ;
+            border-radius: 5px;
+            margin-left: 25px;
+            /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px; */
+        }
+
+        #searchNav ul {
+            display: flex;
+            margin-left: 400px;
+            width: 150px;
+            /* border: 1px solid red; */
+            justify-content: space-between;
+
+
+        }
+
+        #searchNav ul li {
+            list-style: none;
+        }
+
+        .MidTop {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .MidTop div {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .blank {
+            /* background-color: yellow; */
+            padding: 15px;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #FFECB3;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #FFECB3;
+            color: black;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="leftPanel">
+            <img class="logo" src="./LOGO icon.png" alt="">
+            <h2>Admin Store</h2>
+            <div>
+                <ul>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Customers</a></li>
+                    <li><a href="">Discounts</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="RightPanel">
+            <div id="searchNav">
+                <input type="text" placeholder="search anything">
+                <ul>
+                    <li>H</li>
+                    <li>N</li>
+                    <li>U</li>
+                </ul>
+            </div>
+
+            <div class="blank">
+                <div class="MidTop">
+                    <div>
+                        <p>Orders</p>
+                        <p>Drafts</p>
+                    </div>
+                    <button>Export Orders</button>
+                </div>
+            </div>
+            <hr>
+
+            <table>
+                <thead>
+                    <tr class="tr">
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Payment Status</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- append here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    let tbodyEl = document.querySelector("tbody")
+
+
+
+
+</script>
