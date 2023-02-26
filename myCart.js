@@ -1,10 +1,10 @@
 
 //? Fetch
 
-window.addEventListener("load", (id) => {
-    fetchAndRenderSmallImages(id)
-    fetchAndRenderBigImages(id)
-    fetchAndRenderContent(id)
+window.addEventListener("load", () => {
+    fetchAndRenderSmallImages()
+    fetchAndRenderBigImages()
+    fetchAndRenderContent()
 })
 
 //connect this function to jyoti's SinglepRoduct Function and pass click and id
@@ -14,12 +14,12 @@ let globalArr = []
 // --------------SMALL Images --------------->>
 let smallImageSection = document.querySelector("#Small_Img")
 
-async function fetchAndRenderSmallImages(id) {
+async function fetchAndRenderSmallImages() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/${id}`)
+        let resp = await fetch(`http://localhost:3000/Products1/2`)
         let data = await resp.json()
-
-        renderSmallImagesSection(data.smallImages)
+        console.log(data)
+        renderSmallImagesSection(data.smallimage)
     } catch (error) {
         console.log(error)
     }
@@ -46,13 +46,13 @@ function smallImages(SmallImageUrl) {
 
 let BigImageSection = document.querySelector("#Big-Img")
 
-async function fetchAndRenderBigImages(id) {
+async function fetchAndRenderBigImages() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/${id}`)
+        let resp = await fetch(`http://localhost:3000/Products1/2`)
         let data = await resp.json()
 
         // console.log(data)
-        renderBIGImageSection(data.images)
+        renderBIGImageSection(data.image)
 
     } catch (error) {
         console.log(error)
@@ -77,13 +77,13 @@ function BigImage(imageUrl) {
 
 let ContentSection = document.querySelector("#content")
 
-async function fetchAndRenderContent(id) {
+async function fetchAndRenderContent() {
     try {
-        let resp = await fetch(`http://localhost:3000/Products/${id}`)
+        let resp = await fetch(`http://localhost:3000/Products1/2`)
         let data = await resp.json()
         // console.log(data)
         globalArr = data
-        renderContentSection(data.title, data.price, data.images, data.id)
+        renderContentSection(data.title, data.price, data.image, data.id)
 
     } catch (error) {
         console.log(error)
@@ -102,7 +102,7 @@ async function fetchAndRenderContent(id) {
             id: globalArr.id,
             title: globalArr.title,
             price: globalArr.price,
-            images: globalArr.images,
+            image: globalArr.image,
             title: globalArr.title,
             quantity: 1,
         }
@@ -115,6 +115,7 @@ async function fetchAndRenderContent(id) {
             localStorage.setItem("cart", JSON.stringify(cartArr))
             // add here next page redirection for vishal
             alert("Product Has Successfully Been Added")
+            window.location.assign("cart.html")
         }
         // console.log(dataSet.id)
         // cartArr.push(obj)
@@ -133,14 +134,15 @@ async function fetchAndRenderContent(id) {
         }
         return false
     }
+    // console.log(globalArr)
 }
 // 
 
 
 
-function renderContentSection(title, price, images, id) {
+function renderContentSection(title, price, image, id) {
     // console.log(id)
-    let cardSection = `${getContent(title, price, images, id)} `;
+    let cardSection = `${getContent(title, price, image, id)} `;
 
     ContentSection.innerHTML = cardSection
 
@@ -239,10 +241,10 @@ function renderContentSection(title, price, images, id) {
 }
 
 
-function getContent(title, price, images, id) {
+function getContent(title, price, image, id) {
     // console.log(id)
     return `
-            <h1>${title}</h1>
+            <h2 style="font-weight: 800;">${title}</h2>
 
             <p id="Sku">SKU: 414500</p>
             <!-- append here -->
@@ -312,7 +314,7 @@ ${/* This is Add to cart pop up */""}
     </div>
     <div id="flex">
         <div id="image">
-            <img src="${images}"
+            <img src="${image}"
                 alt="error">
         </div>
         <div id="AcceptTerm">

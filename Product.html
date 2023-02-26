@@ -299,6 +299,7 @@
 </div>    
 <!--2 nav bar ends-->
 
+<!-- main body part start -->
   <div id="offer">
     <div class="div1"><h5>JUST IN 1600+ NEW ARRIVALS</h5></div>
     <div id="border"></div>
@@ -379,10 +380,13 @@
 </div>
 </a>
 </div>
+
+<!-- filter html code start -->
+
 <div id="Filter">  
-  <div>
-    
-  </div>
+  
+   
+       <div></div>
        <div class="filter1">
         <label for="color"></label>
         <select id="color"  onchange="filterdata()">
@@ -395,9 +399,8 @@
           <option value="white">white</option>
          </select>
          </div>
-
          <div class="filter">
-          <label for="color"></label>
+          <label for="type"></label>
           <select id="type"  onchange="filterdata()">
             <option value="">All Type</option>
             <option value="Wood">Wood</option>
@@ -407,12 +410,15 @@
             <option value="Leather">Leather</option>
           </select>
       </div>
-      <!-- filter end -->
       <div>
-        <a href="Product.html"><button class="view">View All</button></a>
+      <a href="Product.html"><button class="view">View All</button></a>
       </div>
-    </div>
-    <div id="relevant">
+      <div id="items">
+        <p>50 items</p>
+      </div>
+     </div>
+      
+      <div id="relevant">
       <button class="relevant">Most Relevant <i class="fa-sharp fa-solid fa-angle-down"></i></button>
       <div class="dropdown_reve">
         <div><a href="">Most Relevent</a></div> 
@@ -423,9 +429,41 @@
     </div>
   </div>
 </div>
+<!-- filter buttons end  -->
+
+<!-- div for append data -->
 <div id="append">
   <!-- Products append here -->
 </div>
+<!--  -->
+
+<!-- pgination  start-->
+
+<div id="pagination">
+  
+<div>
+
+  <button class="page-btn-active">1</button>
+</div>
+<div>
+
+  <button class="page-btn">2</button>
+</div>
+<div>
+  <button class="page-btn">3</button>
+
+</div>
+<div>
+
+  <button class="page-btn">4</button>
+</div>
+<div>
+
+  <button class="page-btn">5</button>
+</div>
+  
+</div>
+<!-- pagination end -->
 
 
 <!-- footer start -->
