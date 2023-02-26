@@ -22,10 +22,9 @@ let filteredProducts = [];
         res =  await res.json();
         console.log(res);
         data  = res;
-        //  displaypro(data);
         filteredProducts = data.slice();
-        // price filter_____
-        displaypro( filteredProducts ,page);
+        //  displaypro(data);
+        displaypro(filteredProducts ,page);
         
      } catch (error) {
       console.log(error)
@@ -35,14 +34,20 @@ let filteredProducts = [];
  
 
 //  price filter function___________________________
-
+let  all_product = "";
 function sortData(sortOrder) {
-  if (sortOrder === "lowToHigh") {
-    filteredProducts.sort((a, b) => a.price - b.price); // updated to use new name for filtered data array
-  } else if (sortOrder === "highToLow") {
-    filteredProducts.sort((a, b) => b.price - a.price); // updated to use new name for filtered data array
-  }
-  displaypro(filteredProducts, currentPage);
+  if (sortOrder==="lowToHigh"){
+    filteredProducts.sort((a,b) => 
+    a.price - b.price
+  )} 
+  else if (sortOrder === "highToLow") {
+    filteredProducts.sort((a,b) =>
+     b.price - a.price
+  )}
+  else{
+    all_product ="http://localhost:3000/Products";
+ }
+  displaypro(filteredProducts,currentPage);
 }
 
 // price filter function end___________________________
@@ -50,7 +55,7 @@ function sortData(sortOrder) {
 
 //  pagination ____________
  let currentPage = 1;
- const productsPerPage = 10;
+ const products_PerPage = 10;
 //  ______________pagination end
 
 // display product making card_________________________
@@ -59,9 +64,9 @@ function sortData(sortOrder) {
     Products.innerHTML="";
 
     // pagination___________
-    const startIndex = (currentPage - 1) * productsPerPage;
-    const endIndex = startIndex + productsPerPage;
-    const productsToShow = data.slice(startIndex, endIndex);
+    const startIndex = (currentPage-1)*products_PerPage;
+    const endIndex = startIndex+products_PerPage;
+    const productsToShow = data.slice(startIndex,endIndex);
   //  ___________________pagination end
     
   console.log(data)
@@ -96,17 +101,17 @@ function sortData(sortOrder) {
 
   //  pagination___________
 
-  const numPages = Math.ceil(data.length / productsPerPage);
-  const pagination = document.getElementById("pagination");
-  pagination.innerHTML = "";
-  for (let i = 1; i <= numPages; i++) {
-    const button = document.createElement("button");
-    button.innerText = i;
-    if (i === currentPage) {
-      button.setAttribute("disabled", true);
+    const numerofPages = Math.ceil(data.length/products_PerPage);
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+  for (let i=1;i<=numerofPages;i++) {
+        const button = document.createElement("button");
+        button.innerText=i;
+    if (i===currentPage) {
+          button.setAttribute("disabled", true);
     }
     button.addEventListener("click", () => {
-      currentPage = i;
+        currentPage = i;
       displaypro(data,i);
     });
     pagination.append(button);
