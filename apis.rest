@@ -29,7 +29,7 @@ GET http://localhost:9090/employees/yjkyh1htCb
 
 
 ### DELETE a particular employee
-DELETE http://localhost:9090/employees/FMNR1OS31P
+DELETE http://localhost:9090/Products1/zr7XBm8L6B
 
 ### Patch Salary of an employee
 ### Only the salary field will be updated

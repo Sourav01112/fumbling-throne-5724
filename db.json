@@ -419,69 +419,6 @@
       "price": "399.00",
       "type": "Metal",
       "color": "Grey"
-    },
-    {
-      "name": "7iuyi",
-      "image": "loijl",
-      "salary": 86578,
-      "createdAt": 1677425159086,
-      "id": "zr7XBm8L6B"
-    },
-    {
-      "name": "jghj",
-      "image": "jkl",
-      "salary": 11,
-      "createdAt": 1677425305283,
-      "id": "92eLQePAr4"
-    },
-    {
-      "name": "",
-      "image": "",
-      "price": 0,
-      "createdAt": 1677425474770,
-      "id": "7ySYAQVUKw"
-    },
-    {
-      "name": "khjk",
-      "image": "kjhk",
-      "price": 57,
-      "createdAt": 1677425556634,
-      "id": "DIWBBA1o5f"
-    },
-    {
-      "name": "sourav",
-      "image": "qwerty",
-      "price": 100,
-      "createdAt": 1677425595057,
-      "id": "KcG2tujF0u"
-    },
-    {
-      "title": "Sourav",
-      "image": "qwerty",
-      "price": 50,
-      "createdAt": 1677425645554,
-      "id": "Nc9ugtsT2n"
-    },
-    {
-      "title": "Sourav",
-      "image": "https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/",
-      "price": 0,
-      "createdAt": 1677425680826,
-      "id": "lwIzurZuaZ"
-    },
-    {
-      "title": "fghfgh",
-      "image": "https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/",
-      "price": 567456,
-      "createdAt": 1677425869106,
-      "id": "ZXLE6PNDEi"
-    },
-    {
-      "title": "Sourav",
-      "image": "https://cb.scene7.com/is/image/Crate/DessauChairMCSOSSF22_3D/$web_plp_card$/220502111431/dessau-boucle-accent-chair-with-chrome-frame.jpg",
-      "price": 456,
-      "createdAt": 1677425929638,
-      "id": "bIrxmcqiQX"
     }
   ],
   "cats": [
