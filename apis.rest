@@ -1,4 +1,4 @@
-@token = “{{login.response.headers.X-AuthToken}}”
+# @token = “{{login.response.headers.X-AuthToken}}”
 
 ### GET all recipes
 GET http://localhost:9090/recipeIngredients?_limit=10&_page=1

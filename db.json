@@ -2,10 +2,9 @@
   "Products1": [
     {
       "id": 1,
-      "title": "Nice Chair",
+      "title": "Badass Chair",
       "image": "https://cb.scene7.com/is/image/Crate/MuirfieldAccentChairSOSSS23/$web_plp_card$/220908114659/muirfield-sculptural-metal-accent-chair.jpg",
-      "price": "5000",
-      "salary": "5000"
+      "price": "50000"
     },
     {
       "id": 2,
@@ -45,20 +44,8 @@
     {
       "id": 4,
       "title": "Lounge Chair",
-      "price": "1,899.00",
       "image": "https://cb.scene7.com/is/image/Crate/PetrieChairCOSOSSS23_3D/$web_plp_card$/230127143453/petrie-velvet-mid-century-chair.jpg",
-      "Newarrival": "New Arrival",
-      "type": "Velvet",
-      "color": "Green",
-      "smallimage": [
-        "https://cb.scene7.com/is/image/Crate/PetrieChairCOSOSSS23_3D/$web_pdp_main_carousel_med$/230127143453/petrie-velvet-mid-century-chair.jpg",
-        "https://cb.scene7.com/is/image/Crate/PetrieChairCO3QSSS23_3D?$web_pdp_main_carousel_thumb_med$",
-        "https://cb.scene7.com/is/image/Crate/PetrieChairCOSDSSS23_3D?$web_pdp_main_carousel_thumb_med$",
-        "https://cb.scene7.com/is/image/Crate/PetrieChairCO3QBSSS23_3D?$web_pdp_main_carousel_thumb_med$",
-        "https://cb.scene7.com/is/image/Crate/PetrieDaybedCOAVSSS23_3D?$web_pdp_main_carousel_thumb_med$",
-        "https://cb.scene7.com/is/image/Crate/PetrieSofaCOAVSSS23_3D?$web_pdp_main_carousel_thumb_med$",
-        "https://cb.scene7.com/is/image/Crate/PetrieSofaCOAV2SSS23_3D?$web_pdp_main_carousel_thumb_med$"
-      ]
+      "price": "6456"
     },
     {
       "id": 5,
@@ -72,7 +59,7 @@
     {
       "id": 6,
       "title": "Leather Chair",
-      "price": "1,699.00",
+      "price": "00",
       "image": "https://cb.scene7.com/is/image/Crate/WellsLthrChairCynSOSSF20_1x1/$web_plp_card$/200720144738/wells-leather-tuxedo-chair.jpg",
       "type": "Leather",
       "color": "Brown"
@@ -203,11 +190,9 @@
     },
     {
       "id": 22,
-      "title": "Rattan Chair",
+      "title": "Rattaniiiiii Chair",
       "image": "https://cb.scene7.com/is/image/Crate/FieldsWhtwshWhtChrSOSSF21/$web_plp_card$/220330135412/fields-cane-back-white-wash-accent-chair.jpg",
-      "price": "399.00",
-      "type": "Metal",
-      "color": "white"
+      "price": "399.000000"
     },
     {
       "id": 23,
@@ -434,6 +419,69 @@
       "price": "399.00",
       "type": "Metal",
       "color": "Grey"
+    },
+    {
+      "name": "7iuyi",
+      "image": "loijl",
+      "salary": 86578,
+      "createdAt": 1677425159086,
+      "id": "zr7XBm8L6B"
+    },
+    {
+      "name": "jghj",
+      "image": "jkl",
+      "salary": 11,
+      "createdAt": 1677425305283,
+      "id": "92eLQePAr4"
+    },
+    {
+      "name": "",
+      "image": "",
+      "price": 0,
+      "createdAt": 1677425474770,
+      "id": "7ySYAQVUKw"
+    },
+    {
+      "name": "khjk",
+      "image": "kjhk",
+      "price": 57,
+      "createdAt": 1677425556634,
+      "id": "DIWBBA1o5f"
+    },
+    {
+      "name": "sourav",
+      "image": "qwerty",
+      "price": 100,
+      "createdAt": 1677425595057,
+      "id": "KcG2tujF0u"
+    },
+    {
+      "title": "Sourav",
+      "image": "qwerty",
+      "price": 50,
+      "createdAt": 1677425645554,
+      "id": "Nc9ugtsT2n"
+    },
+    {
+      "title": "Sourav",
+      "image": "https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/",
+      "price": 0,
+      "createdAt": 1677425680826,
+      "id": "lwIzurZuaZ"
+    },
+    {
+      "title": "fghfgh",
+      "image": "https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/",
+      "price": 567456,
+      "createdAt": 1677425869106,
+      "id": "ZXLE6PNDEi"
+    },
+    {
+      "title": "Sourav",
+      "image": "https://cb.scene7.com/is/image/Crate/DessauChairMCSOSSF22_3D/$web_plp_card$/220502111431/dessau-boucle-accent-chair-with-chrome-frame.jpg",
+      "price": 456,
+      "createdAt": 1677425929638,
+      "id": "bIrxmcqiQX"
     }
   ],
   "cats": [
@@ -66321,4 +66369,3 @@
     }
   ]
 }
-
