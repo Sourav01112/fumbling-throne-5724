@@ -42,6 +42,7 @@
             <p>Learn How <b>&#10230</b></p>
           </b>
         </div>
+
       </div>
     </div>
     <!--right nav outer div ends-->
@@ -806,7 +807,10 @@
 
     })
     let newName1 = document.querySelector(".dropbtn")
-    let newName = document.querySelector("#email")
+
+    let email = document.getElementById("email")
+
+    // let newName = document.querySelector("#email")
 
     // function changeName() {
     //   let popUp = `<p data-modal-target="#modal" class="dropbtn">${email.value}</p>`
@@ -817,29 +821,11 @@
     function CompareDATA(signInArr, getData) {
       for (let i = 0; i < getData.length; i++) {
         if (getData[i].mail === signInArr[i].email && getData[i].password === signInArr[i].password) {
-          // setTimeout(function () {
-          //   // e.preventDefault()
-
           alert("Login Success")
-          window.location.assign("myCartPage.html")
+          newName1.innerHTML = email.value
 
 
-
-
-          // }, 50000)
-          // console.log("*********")
-          // Swal.fire(
-          //   'Good job!',
-          //   'You clicked the button!',
-          //   'success'
-          // )
-          // window.addEventListener("load", () => {
-          //   Swal.fire(
-          //     'Good job!',
-          //     'You clicked the button!',
-          //     'success'
-          //   )
-          // })
+          // window.location.assign("myCartPage.html")
 
         } else if (getData[i].mail === signInArr[i].email && getData[i].password !== signInArr[i].password) {
           alert("Wrong")

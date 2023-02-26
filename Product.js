@@ -118,6 +118,6 @@ let Products = document.getElementById("append");
 
 // standup________Deepanshu****
  function SingleProduct(id){
- //   console.log(id);
+  //  console.log(id);
  window.location.assign("myCartPage.html")
  }
