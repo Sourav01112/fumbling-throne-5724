@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(187, 184, 184);
+    align-items: center;
+    padding: 12px 0;
+}
+#head>div>p{
+    font-size: 17px;
+    font-weight: bold;
+}
+#head>p{
+    font-size: 30px;
+    font-weight: 800;
+}
+#container{
+    display: flex;
+    margin-top: 15px;
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+#cart-items{
+    width: 68%;
+}
+#cart-checkout{
+    width: 25%;
+}
+#container img{
+    width: 100%;
+}
+#info{
+    display: flex;
+}
+#icon{
+    display: block;
+    text-align: left;
+    width: 28px;
+    height: 28px;
+}
+#gift{
+    display: flex;
+    align-items: center;
+}
+#secure img{
+    width: 34px;
+    height: 33px;
+}
+#secure>div>p:nth-child(1){
+    font-size: 16px;
+    font-weight: 600;
+}
+#secure>div>p:nth-child(2){
+    font-size: 14;
+}
+#cart-checkout{
+    border: 2px solid rgb(34, 33, 33);
+    padding: 28px;
+}
+#summary{
+    margin-bottom: 33px;
+}
+#summary p{
+    font-size: 21px;
+}
+.icon-join{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+a{
+   color: black; 
+}
+h1>span{
+ color: rgb(142, 140, 140);
+ font-weight: 100;
+}
+#banner{
+    margin: 30px 0;
+}
+hr{
+    font-weight: 100;
+    border: 1px solid black;
+}

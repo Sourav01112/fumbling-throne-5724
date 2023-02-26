@@ -373,6 +373,14 @@
     color: white;
     margin-top: 10px;
 }
+#CreateBtn {
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
 .height1{
   height: 35px;
   width: 100%;

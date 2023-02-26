@@ -1,0 +1,99 @@
+/* footer code is here */
+#footer{
+    width: 100%;
+    background-color: #333;
+    color: #ccc;
+    padding-top: 72px;
+    padding-bottom: 30px;
+  }
+  #footer h3,h1{
+    color: white;
+  }
+  
+  .upper{
+    display: flex;
+    width: 74%;
+    justify-content: space-between;
+    margin: auto;
+  }
+  #footer hr{
+    width: 74%;
+    border: 1px solid #7e7e7e;
+  }
+  #big{
+    font-size: 120px;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  #company{
+    font-size: 42px;
+    cursor: pointer;
+  }
+  .inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  #apple{
+    display: flex;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 50px;
+  }
+  #apple img{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  #apple>div{
+    height: 100%;
+  }
+  #apple>div>h3{
+    margin-top: 0;
+  }
+  .inner img{
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    margin-top: 20px;
+  }
+  
+  #footer p{
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  #footer p:hover{
+    text-decoration: underline;
+  }
+  #hr1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  #hr2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  #infoof{
+    margin: auto;
+  }
+  .icons{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .icons:hover{
+    border: 2px solid blue;
+    border-radius: 5px;
+  }
+  
+  

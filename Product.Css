@@ -1,0 +1,308 @@
+
+#offer{
+    
+    display: flex;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+    border-bottom: 2px solid #ced2d8;
+}
+.div1{
+   margin-left: 120px;
+}
+.div2{
+    margin-right: 120px;
+}
+#giftlink{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#sofalink a{
+    color: #4e4d4d;
+    text-decoration: underline;
+    font-size: 10px;
+    margin-left: 9px;
+    font-family: var(--webfont-primary,sans-serif);
+}
+#sofalink a:hover{
+  border: dotted;
+}
+.a2{
+    margin-left: 5px;
+}
+#heading{
+    font-size: 27px;
+    line-height: 36px;
+    font-family: var(--webfont-primary,sans-serif);
+    color: #0a0909;
+    font-weight: 600;
+    padding: 24px 0 16px;
+    margin-bottom: 0%;
+    margin-left: 10px;
+    margin-top: 0%;
+}
+
+/* filter div||button CSS start************ */
+#Filter{
+    display: flex;
+    text-align: center;
+    height: 30px;
+}
+#Filter{
+    margin-left: 10px;
+}
+
+select{
+ border: none;
+ background-color:white;
+ width: 70px;
+}
+
+select:hover{
+    border:none;
+    background-color: whitesmoke;
+}
+
+.filter1{
+   border: 2px solid red;
+}
+
+
+.filter{
+    background-color: white;
+    color: #110e0e;
+    font-weight: bold;
+    padding: 5px 30px;
+    letter-spacing: 1px;
+    border: 1px solid rgb(91, 89, 89);
+    margin-left: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.filter:hover{
+    background-color: whitesmoke;
+}
+
+.filter1{
+    background-color: white;
+    color: #110e0e;
+    font-weight: bold;
+    padding: 5px 30px;
+    letter-spacing: 1px;
+    border: 1px solid rgb(91, 89, 89);
+    margin-left: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.filter1:hover{
+    background-color: whitesmoke;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    border: 1px solid rgb(91, 89, 89);
+}
+
+.pickup{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid rgb(91, 89, 89);
+    border-radius:3px ;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.ship{
+    padding: 5px ;
+    background-color: white;
+    border: 1px solid rgb(91, 89, 89);
+    border-radius:3px ;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.view{
+    padding: 5px 10px;
+    background-color: rgb(78, 75, 75);
+    border: 1px solid rgb(91, 89, 89);
+    border-radius:3px ;
+    color: rgb(241, 231, 231);
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.view:hover{
+   background-color: rgb(50, 50, 50);
+   border: solid;
+}
+
+#items{
+    margin-left: 950px;
+   margin-top: -1%;
+    margin-bottom: 5px;
+  
+}
+#items p{
+   margin-top: 10px;
+}
+
+.relevant{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid rgb(91, 89, 89);
+    border-radius:3px ;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: -38px;
+    position:relative; 
+}
+
+.dropdown_reve{
+    position: absolute;
+    background-color: #efe8e8;
+    width: 145px;
+    height: auto;
+    right:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    margin-top: -8px;
+    display: none;
+}
+
+.dropdown_reve>div{
+    width: 90%;
+    padding: 10px ;
+    text-align: center;
+}
+
+.dropdown_reve a{
+    color: black;
+    text-decoration: none;
+}
+
+#relevant:hover .dropdown_reve{
+    display: flex;
+}
+.relevant:hover {
+   border-style:dotted;
+   text-decoration: underline;
+   background-color: white;
+}
+
+#category{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+height: 70px;
+margin-bottom: 50px;
+margin-left: 10px;
+margin-right: 10px;
+gap: 5px;
+}
+
+#category div{
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.category_innerdiv{
+     display: flex;
+     align-items: center;
+}
+
+.category_innerdiv div{
+     width: 90%;
+     font-size:10px;
+     color: #0a0909;
+     text-decoration: none;
+     background-color: whitesmoke;
+     text-align: center;
+     font-weight: normal;
+}
+
+.category_innerdiv div img{
+    width: 95%;
+    margin-left: 5px;
+}
+
+/* filter div CSS end********************* */
+
+
+/* product card csss start ______ */
+#append{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 10px;
+    margin-top: 25px;
+}
+#append div img{
+   width: 365px;
+   margin-bottom: 10px;
+}
+#append div{
+    font-size: 16px;
+    font-family: var(--webfont-primary,sans-serif);
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+#append div h5{
+  margin-left: 10px;
+}
+#append div span{
+    margin-left: 10px;
+}
+#border{
+    border-right: 2px solid rgb(50, 50, 50);
+    height: 30px;
+    margin-top: 20px;
+}
+
+.card img{
+    cursor: pointer;
+    
+}
+.card img:hover{
+    transform: scaleX(-1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+/* product Card css end***************** */
+
+
+/* pagination css start  *******************************************************************************************************/
+
+#pagination{
+     
+    display: flex;
+    justify-content: center;
+   
+}
+
+#pagination button{
+   font-weight: bold;
+   color: #222;
+   font-style: initial;
+   padding: 5px;
+   border: none;
+   margin-left: 5px;
+   width: 50px;
+   padding: 15px;
+   margin-bottom: 100px;
+   border: #222;
+   box-shadow: rgba(121, 118, 118, 0.15) 0px 2px 8px;
+}
+
+#pagination button:hover{
+background-color: rgb(137, 177, 179);
+border: 2px rgb(129, 198, 202);
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* pagination css end**************************************************************************************************************** */

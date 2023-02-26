@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>www.mycrateandbarrel.com</title>
   <link rel="stylesheet" href="index.css" />
 </head>
@@ -67,70 +68,71 @@
       <div id="ordersignin" class="dropdown">
         <p data-modal-target="#modal" class="dropbtn">Orders & Sign In</p>
 
-<!-- Sign In pop-up modal -->
+        <!-- Sign In pop-up modal -->
 
-  <div class="modal" id="modal">
-      <div class="modal-header">
-          <!-- <div class="title"> Example modal</div> -->
-          <button data-close-button id="crossBtn" class="close-button">&times;</button>
-      </div>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <!-- <div class="title"> Example modal</div> -->
+            <button data-close-button id="crossBtn" class="close-button">&times;</button>
+          </div>
 
-      <div class="modal-body">
-          <div id="leftPanel">
+          <div class="modal-body">
+            <div id="leftPanel">
 
               <p style="font-size: large; font-weight: 800;">Sign In</p>
-              <form method="post">
-                  <p id="Reset"><u>Reset password</u></p>
-                  <p><b>Email</b> <span style="padding-left: 10px;">required</span></p>
-                  <input type="email" class="height1" required>
+              <form id="signIn" method="post">
+                <p id="Reset"><u>Reset password</u></p>
+                <p><b>Email</b> <span style="padding-left: 10px;">required</span></p>
+                <input type="email" id="email" class="height1" required>
 
-                  <p>
-                      <label for="password"><b> Password <span style="padding-left: 10px;"></span> </span>
-                          </b>required</label> <br><br>
-                      <input type="password" name="password" id="password" class="height2" required>
-                      <i class="bi bi-eye-slash" id="togglePassword"></i><br>
-                  </p>
+                <p>
+                  <label for="password"><b> Password <span style="padding-left: 10px;"></span> </span>
+                    </b>required</label> <br><br>
+                  <input type="password" name="password" id="password" class="height2" required>
+                  <i class="bi bi-eye-slash" id="togglePassword"></i><br>
+                </p>
 
 
-                  <input type="submit" value="SIGN IN" id="BlackBorder">
-                  <p id="or">or</p>
-
-                  <div id="social">
-                      <i class="fa-brands fa-apple"></i>
-                      <p>SIGN IN WITH APPLE</p>
-                  </div>
-                  <div id="social">
-                      <i class="fa-brands fa-google"></i>
-                      <p>SIGN IN WITH GOOGLE</p>
-                  </div>
-
-                  <p>By signing in, you are agreeing to our <u>Terms of Use and Privacy Policy</u></p>
+                <input type="submit" value="SIGN IN" id="BlackBorder">
               </form>
-          </div>
-          <div id="divider"></div>
+              <p id="or">or</p>
 
-          <div id="rightPanel">
+              <div id="social">
+                <i class="fa-brands fa-apple"></i>
+                <p>SIGN IN WITH APPLE</p>
+              </div>
+              <div id="social">
+                <i class="fa-brands fa-google"></i>
+                <p>SIGN IN WITH GOOGLE</p>
+              </div>
+
+              <p>By signing in, you are agreeing to our <u>Terms of Use and Privacy Policy</u></p>
+              <!-- </form> -->
+            </div>
+            <div id="divider"></div>
+
+            <div id="rightPanel">
               <p style="font-size: large; font-weight: 800;">Create An Account</p>
               <img src="./CreateAcc.png" alt="">
-              <input type="submit" value="CREATE ACCOUNT" id="BlackBorder">
+              <input type="submit" value="CREATE ACCOUNT" id="CreateBtn">
               <p>Don't have an account? <span><u>Track/Schedule Order</u></span></p>
+            </div>
           </div>
-      </div>
-  </div>
-  <div id="overlay"></div>
-</div>
-
-<!-- Sign In pop-up modal ENDS -->
-
-        <div class="dropdown-content">
-          <a href="#" id="bar1">Sign In / Create Account</a>
-          <a href="#" id="bar1">
-            Track Orders / Schedule Delivery</a>
-          <a href="#">Create a Registry</a>
-          <a href="#">Crate & Barrel Credit Card</a>
-
         </div>
-      
+        <div id="overlay"></div>
+      </div>
+
+      <!-- Sign In pop-up modal ENDS -->
+
+      <div class="dropdown-content">
+        <a href="#" id="bar1">Sign In / Create Account</a>
+        <a href="#" id="bar1">
+          Track Orders / Schedule Delivery</a>
+        <a href="#">Create a Registry</a>
+        <a href="#">Crate & Barrel Credit Card</a>
+
+      </div>
+
 
       <!--order and sign in div end-->
       <!--sign in image div start-->
@@ -165,7 +167,7 @@
 
       <!--my cart div ends-->
     </div>
-  
+
     <!--all crenditials div end-->
   </div>
   <!--search bar whole section div ends-->
@@ -203,7 +205,7 @@
                 Furniture</b></a>
             <a href="#"><b>Living Room Furniture</b></a>
             <a href="#">Sofas</a>
-            <a href="#">Accent Chairs</a>
+            <a href="./Product.html">Accent Chairs</a>
             <a href="#">Sleeper Sofas</a>
             <a href="#">Game Tables</a>
             <a href="#">Leather Furniture</a>
@@ -638,8 +640,8 @@
     </div>
   </div>
 
-  
-<!--  Footer ends -->
+
+  <!--  Footer ends -->
 
 
 
@@ -659,17 +661,12 @@
     <p><b><a id="feedback-text" href="feedbackform.html" target="_blank">FEEDBACK</a></b></p>
   </button>
 
-<!-- Footer -->
+  <!-- Footer -->
 
 
 
 
-<!-- Footer ENDS -->
-
-
-
-
-
+  <!-- Footer ENDS -->
 
 
 
@@ -702,44 +699,44 @@
     }
 
 
- //   pop up MODAL starts
+    //   pop up MODAL starts
 
- const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    const openModalButtons = document.querySelectorAll('[data-modal-target]')
     const closeModalButtons = document.querySelectorAll('[data-close-button]')
     const overlay = document.getElementById('overlay')
 
 
     openModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = document.querySelector(button.dataset.modalTarget)
-            openModal(modal)
-        })
+      button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget)
+        openModal(modal)
+      })
     })
 
     overlay.addEventListener('click', () => {
-        const modals = document.querySelectorAll('.modal.active')
-        modals.forEach(modal => {
-            closeModal(modal)
-        })
+      const modals = document.querySelectorAll('.modal.active')
+      modals.forEach(modal => {
+        closeModal(modal)
+      })
     })
 
     closeModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = button.closest('.modal')
-            closeModal(modal)
-        })
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal')
+        closeModal(modal)
+      })
     })
 
     function openModal(modal) {
-        if (modal == null) return
-        modal.classList.add('active')
-        overlay.classList.add('active')
+      if (modal == null) return
+      modal.classList.add('active')
+      overlay.classList.add('active')
     }
 
     function closeModal(modal) {
-        if (modal == null) return
-        modal.classList.remove('active')
-        overlay.classList.remove('active')
+      if (modal == null) return
+      modal.classList.remove('active')
+      overlay.classList.remove('active')
     }
 
 
@@ -751,27 +748,124 @@
     //   pop up MODAL ENDS
 
 
+
+    // Create Account AddEventListener
+
+    let CreateAcc = document.getElementById("CreateBtn")
+    CreateAcc.addEventListener("click", () => {
+      window.location.assign("SignUp.html")
+    })
+
+
+
     //* Password Hide or Show
 
     const togglePassword = document.querySelector("#togglePassword");
     const password = document.querySelector("#password");
 
     togglePassword.addEventListener("click", function () {
-        // toggle the type attribute
-        const type = password.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
+      // toggle the type attribute
+      const type = password.getAttribute("type") === "password" ? "text" : "password";
+      password.setAttribute("type", type);
 
-        // toggle the icon
-        this.classList.toggle("bi-eye");
+      // toggle the icon
+      this.classList.toggle("bi-eye");
     });
 
-    // prevent form submit
-    const form = document.querySelector("form");
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-    });
+    //  Sign-In PART
+    // FORM SUBMISSION in LS
+    let getData = JSON.parse(sessionStorage.getItem("Account")) || []
+    console.log(getData)
+    let formEl = document.querySelector("#signIn")
+
+    // To access Admin
+    formEl.addEventListener("submit", (event) => {
+      event.preventDefault()
+      if (formEl.email.value == "admin@gmail.com" && formEl.password.value == "admin") {
+        alert("Redirecting to Admin Portal")
+        window.location.assign("admin.html")
+
+      }
+    })
+
+
+    formEl.addEventListener("submit", (e) => {
+      e.preventDefault()
+      let signInArr = []
+      let SignInObj = {
+        email: formEl.email.value,
+        password: formEl.password.value,
+      }
+      signInArr.push(SignInObj)
+
+
+      // console.log(signInArr)
+      CompareDATA(signInArr, getData)
+
+
+
+    })
+    let newName1 = document.querySelector(".dropbtn")
+    let newName = document.querySelector("#email")
+
+    // function changeName() {
+    //   let popUp = `<p data-modal-target="#modal" class="dropbtn">${email.value}</p>`
+    //   // return popUp
+    //   newName1.innerHTML = popUp
+
+    // }
+    function CompareDATA(signInArr, getData) {
+      for (let i = 0; i < getData.length; i++) {
+        if (getData[i].mail === signInArr[i].email && getData[i].password === signInArr[i].password) {
+          // setTimeout(function () {
+          //   // e.preventDefault()
+
+          alert("Login Success")
+          window.location.assign("myCartPage.html")
+
+
+
+
+          // }, 50000)
+          // console.log("*********")
+          // Swal.fire(
+          //   'Good job!',
+          //   'You clicked the button!',
+          //   'success'
+          // )
+          // window.addEventListener("load", () => {
+          //   Swal.fire(
+          //     'Good job!',
+          //     'You clicked the button!',
+          //     'success'
+          //   )
+          // })
+
+        } else if (getData[i].mail === signInArr[i].email && getData[i].password !== signInArr[i].password) {
+          alert("Wrong")
+          // Swal.fire(
+          //   'Wrong Crtedentials!',
+          //   'You entered the wrong input!',
+          //   'Try Again'
+          // )
+
+          // Swal.fire('Any fool can use a computer')
+
+        }
+      }
+    }
+
+
+
+
+
+
+
+
 
 
   </script>
 
 </html>
+
+<script src="sweetalert2.all.min.js"></script>
