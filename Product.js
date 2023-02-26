@@ -44,9 +44,7 @@ function sortData(sortOrder) {
     filteredProducts.sort((a,b) =>
      b.price - a.price
   )}
-  else{
-    all_product ="http://localhost:3000/Products";
- }
+ 
   displaypro(filteredProducts,currentPage);
 }
 
