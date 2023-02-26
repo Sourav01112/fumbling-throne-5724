@@ -1,4 +1,7 @@
- let data = []
+ 
+let data = []
+let filteredProducts = [];  
+
  async function display(color, type,page=1) {
      try {
       //  condition for filter___start
@@ -19,16 +22,32 @@
         res =  await res.json();
         console.log(res);
         data  = res;
-      //  displaypro(data);
-
-       displaypro(data,page);
-       
+        //  displaypro(data);
+        filteredProducts = data.slice();
+        // price filter_____
+        displaypro( filteredProducts ,page);
+        
      } catch (error) {
       console.log(error)
      }
 }
- display();
+  display();
  
+
+//  price filter function___________________________
+
+function sortData(sortOrder) {
+  if (sortOrder === "lowToHigh") {
+    filteredProducts.sort((a, b) => a.price - b.price); // updated to use new name for filtered data array
+  } else if (sortOrder === "highToLow") {
+    filteredProducts.sort((a, b) => b.price - a.price); // updated to use new name for filtered data array
+  }
+  displaypro(filteredProducts, currentPage);
+}
+
+// price filter function end___________________________
+
+
 //  pagination ____________
  let currentPage = 1;
  const productsPerPage = 10;
@@ -95,7 +114,6 @@
 
   // _________________________pagination____end
    
-  
   }
 
 // filter by [ color && type ]
