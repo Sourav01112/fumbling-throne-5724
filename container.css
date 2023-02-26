@@ -1,0 +1,77 @@
+#cart-container{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+#cart-bag{
+    display: grid;
+    width: 90%;
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px;
+}
+#cart-bag>hr{
+    border: 1px solid #ccc;
+}
+#cart-bag>div>img{
+    width: 35%;
+    height: 100%;
+}
+#cart-bag>div{
+ display: flex;
+}
+#cart-bag>div>div>div>button{
+    cursor: pointer;
+    padding: 10px 19px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+#cart-bag>div>div>div>button:hover{
+    background-color: blue;
+    color: white;
+}
+#cart-bag>div>div>div{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 18px;
+}
+#cart-bag>div>div>div>p{
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 11px 20px;
+    border-radius: 3px;
+}
+#cart-bag>div>div{
+    margin-left: 40px;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px 15px 0 15px;
+}
+#cart-bag>div>div>h2{
+    margin-top: 28px;
+}
+#cart-bag>div>div>p{
+  margin-top: 38px;
+  font-size: 20px;
+}
+#cart-bag>div>div>h3{
+    text-align: center;
+    font-size: 22px;
+}
+#cart-bag>div>div>button{
+    padding: 15px 36px;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+#cart-bag>div>div>button:hover{
+    background-color: red;
+    color: white;
+}
