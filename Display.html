@@ -34,7 +34,7 @@
                 <ul>
                     <li class="active"><a href="#">Dashboard</a></li>
                     <li><a id="openIt">Edit</a></li>
-                    <li><a href="#">Customize</a></li>
+                    <li><a href="#">Order Status</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Help</a></li>
                 </ul>
@@ -46,7 +46,7 @@
             <!-- page header -->
             <div id="header">
                 <!-- page title -->
-                <div id="title">DASHBOARD</div>
+                <div id="title">Admin DASHBOARD</div>
                 <!-- search box -->
                 <div id="searchBox">
                     <input type="text" name="" placeholder="Search or type URL...">
@@ -63,7 +63,8 @@
                 <div class="cards">
                     <!-- icon -->
                     <i class="fas fa-users icons"></i>
-                    <h2>1</h2>
+                    <h2><span id="orderCount">0</span></h2>
+                    <!-- <h1>Total Task:- <span id="task-count">0</span></h1> -->
                     <h4>Orders</h4>
                 </div>
                 <!-- Projects card -->
@@ -92,13 +93,15 @@
             <table id="table">
                 <thead>
                     <tr class="tr">
-                        <th>Product Name</th>
-                        <th>Payment Status</th>
-                        <th>Total</th>
+                        <th>Customer Name</th>
+                        <th>Address</th>
+                        <th>Number</th>
+                        <th>Pin</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody id="tbody">
                     <!-- append here -->
                 </tbody>
 

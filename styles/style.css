@@ -1,5 +1,99 @@
 /* reusable */
 
+#main
+{
+    height: 100%;
+    /* width: calc(100% - 100px); */
+    width: 100%;
+   
+    position: absolute;
+}
+/* header */
+#main #header
+{
+    height: 70px;
+    width: calc(100% + 30px);
+    /* width: 1500px; */
+    background: #fff;
+    box-shadow: 2px 2px 5px #00000030;
+    /* position: absolute; */
+    /* left: -30px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* main page title */
+#main #header #title
+{
+    position: absolute;
+    left: 8%;
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}
+#main #header #searchBox
+{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: calc(50% - 160px);
+    z-index: 997;
+}
+#main #header #searchBox input[type="text"]
+{
+    height: 45px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border: 1px solid #666666;
+    padding: 0 20px;
+    /* border-radius: 30px 0 0 30px; */
+    color: black; 
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 0px;
+}
+#main #header #searchBox input[type="text"]::placeholder
+{
+    color: #666666; 
+    text-align: center;
+    margin-top: 10px;
+}
+#main #header #searchBox input[type="submit"]
+{
+    height: 45px;
+    /* width: 80px; */
+    /* border: none; */
+    font-size: 14px;
+    outline: none;
+    background: black;
+    /* border-radius: 0 30px 30px 0; */
+    color: #fff;
+    border: 1px solid black;
+    /* color: black; */
+    cursor: pointer;
+    /* text-align: center; */
+    margin-top: 10px;
+    /* padding-right: 10px; */
+}
+#main #header #logout
+{
+    height: 50px;
+    width: 120px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 8%;
+    background: black;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
 .capsule {
   height: 26px;
   line-height: 26px;
@@ -13,12 +107,13 @@
 
 }
 
+
 #main_container {
   display: flex;
 }
 
 .container {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   margin-top: 20px;
 }
 
@@ -58,6 +153,10 @@
   flex-wrap: wrap;
   flex-basis: 100%;
   gap: 4%;
+}
+#sidebar-one{
+  width: 20%;
+  margin-left: 50px;
 }
 
 .card:not(:last-child) {
@@ -105,31 +204,55 @@
   width: 100%;
   object-fit: cover;
 }
+.data-list-wrapper{
+  width: 90%;
+}
+.card__body{
+  font-family: "verdana", "sans-serif";
+  /* width: 100px; */
+}
 
-.card-link {
+.card__link {
   font-family: "verdana", "sans-serif";
   font-size: 15px;
   color: #1c1c1c;
+  margin-left: 350px;
+  text-decoration: none;
+  /* width: 100px; */
+}
+.card__link:hover{
+  background-color: #FF5722;
+  transform: translate(0px, -2px);
+}
+#Del{
+  background-color: #FF5722;
+  color: white;
+  font-size: 20px;
+}
+#Del:hover{
+  transform: translate(0px, -2px);
+  /* transition: 10s; */
+  /* width:250px ; */
+  background-color: #FF5722;
+
+}
+#pagination-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+#pagination-wrapper > .pagination-button{
+  border-radius: 5px;
+  background-color: #616161;
+  color: white;
+  font-size: 20px;
 }
 
-@media (min-width: 768px) {
-  .card {
-    flex-direction: row;
-  }
 
-  .card-image {
-    flex-basis: 33%;
-    margin: 0;
-    height: auto;
-    max-height: 120px;
-  }
 
-  .card-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-}
+
 
 .card-title {
   margin: 0;
@@ -137,10 +260,9 @@
   font-size: 18px;
 }
 
-.card-image {
+/* .card-image {
   /* background-color: dodgerblue; */
-}
-
+/* } */
 .card-description {
   font-size: 15px;
   color: #696969;
@@ -154,21 +276,11 @@
 }
 
 /* pagination section */
-.pagination-wrapper {
-  border: 1px dashed #E1E1E1;
-  border-radius: 4px;
-  margin-top: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-}
 
 .notification.info {
-
-  background-color: #33C3F0;
-  border-color: #33C3F0;
+  
+  /* background-color: #33C3F0; */
+  /* border-color: #33C3F0; */
   border-radius: 8px;
   padding: 16px;
   display: flex;
@@ -198,5 +310,24 @@
 
 .card__img img{
   width: 100px;
+  
+}
 
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-image {
+    flex-basis: 33%;
+    margin: 0;
+    height: auto;
+    max-height: 120px;
+  }
+
+  .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }

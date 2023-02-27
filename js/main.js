@@ -31,30 +31,44 @@ li.forEach(items => {
     });
 });
 
-let getData = JSON.parse(localStorage.getItem("cart"))
+let getData = JSON.parse(localStorage.getItem("Address-Form")) || []
+document.getElementById("orderCount").innerHTML = getData.length;
 let tbodyEl = document.querySelector("tbody")
 
-window.addEventListener("load", () => {
-    display(getData)
-})
+// window.addEventListener("load", () => {
+//     Display(getData)
+// })
 
+Display(getData)
 
 function Display(getData) {
     tbodyEl.innerHTML = ""
 
-    getData.forEach(function (element, index) {
+    getData.forEach(function (element) {
         let tr = document.createElement("tr")
 
         let name = document.createElement("td")
-        name.innerText = element.title
+        name.innerText = element.name
+
+        let address = document.createElement("td")
+        address.innerText = element.address
+
+        let number = document.createElement("td")
+        number.innerText = element.number
+
+        let pin = document.createElement("td")
+        pin.innerText = element.pin
 
         let status = document.createElement("td")
-        status.innerText = element.status
+        status.innerText = "Dispatch"
+        status.style.backgroundColor = "#FF9800"
+        status.style.color = "white"
+        status.addEventListener("click", ()=>{
+            
+        })
 
-        let total = document.createElement("td")
-        price.innerText = element.price
 
-        tr.append(name, status, total)
+        tr.append(name, address,number, pin, status)
         tbodyEl.append(tr)
 
     })
