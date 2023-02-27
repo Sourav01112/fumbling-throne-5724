@@ -8,175 +8,112 @@
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/skeleton.css" />
   <link rel="stylesheet" href="styles/style.css" />
-  <title>Vite App</title>
+  <title>Admin</title>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
-      <div class="column">
-        <!-- <h1>Cute Little App</h1> -->
-        <img src="./logo1.png" alt="">
-        <h4>ADMIN PORTAL</h4>
+      <div id="main">
+        <!-- page header -->
+        <div id="header">
+          <!-- page title -->
+          <div id="title">Admin DASHBOARD</div>
+          <!-- search box -->
+          <div id="searchBox">
+            <input type="text" name="" placeholder="Search here">
+            <input type="submit" value="Search">
+          </div>
+          <!-- logout button -->
+          <div id="logout">Logout</div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="columns four sidebar-one" id="sidebar-one">
-        <h4>Actions</h4>
+
+
+  <div class="row">
+    <div class="columns four sidebar-one" id="sidebar-one">
+      <!-- <h4>Actions</h4>
         <button id="fetch-ingredient" class="u-full-width button button-primary">
           Fetch Ingredients
         </button>
         <button id="fetch-employees" class="u-full-width button button-primary">
           Fetch All Products
         </button>
-        <hr />
+        <hr /> -->
 
-        <h4>Add Products</h4>
-        <input type="text" id="employee-name" class="u-full-width" placeholder="Name" />
-        <input type="text" id="employee-image" class="u-full-width" placeholder="Image Url" />
-        <!-- <input
+      <h4>Add Products</h4>
+      <input type="text" id="employee-name" class="u-full-width" placeholder="Name" />
+      <input type="text" id="employee-image" class="u-full-width" placeholder="Image Url" />
+      <!-- <input
             type="number"
             id="employee-dept"
             class="u-full-width"
             placeholder="Department"
           /> -->
-        <input type="number" id="employee-salary" class="u-full-width" placeholder="Price" />
-        <button id="add-employee" class="u-full-width button button-primary">
-          Add Employee
-        </button>
-        <hr />
+      <input type="number" id="employee-salary" class="u-full-width" placeholder="Price" />
+      <button id="add-employee" class="u-full-width button button-primary">
+        Add Products
+      </button>
+      <hr />
 
-        <h4>update all fields of Products</h4>
-        <input type="text" id="update-employee-id" class="u-full-width" placeholder="ID" />
-        <input type="text" id="update-employee-name" class="u-full-width" placeholder="Title" />
-        <input type="text" id="update-employee-image" class="u-full-width" placeholder="Image Url" />
-        <!-- <input
+      <h4>Update All Fields </h4>
+      <input type="text" id="update-employee-id" class="u-full-width" placeholder="ID" />
+      <input type="text" id="update-employee-name" class="u-full-width" placeholder="Title" />
+      <input type="text" id="update-employee-image" class="u-full-width" placeholder="Image Url" />
+      <!-- <input
             type="number"
             id="update-employee-dept"
             class="u-full-width"
             placeholder="Department"
           /> -->
-        <input type="number" id="update-employee-salary" class="u-full-width" placeholder="Price" />
-        <button id="update-employee" class="u-full-width button button-primary">
-          Update all fields
-        </button>
-        <hr />
+      <input type="number" id="update-employee-salary" class="u-full-width" placeholder="Price" />
+      <button id="update-employee" class="u-full-width button button-primary">
+        Update All Fields
+      </button>
+      <hr />
 
-        <h4>update only Price</h4>
-        <input type="text" id="update-score-employee-id" class="u-full-width" placeholder="ID" />
-        <input type="number" id="update-score-employee-salary" class="u-full-width" placeholder="Price" />
-        <button id="update-score-employee" class="u-full-width button button-primary">
-          Update Product Price
-        </button>
-        <hr />
+      <h4>Update Only Price</h4>
+      <input type="text" id="update-score-employee-id" class="u-full-width" placeholder="ID" />
+      <input type="number" id="update-score-employee-salary" class="u-full-width" placeholder="Price" />
+      <button id="update-score-employee" class="u-full-width button button-primary">
+        Update Price
+      </button>
+      <hr />
 
-        <h4>Sort Based On Price</h4>
-        <button id="sort-low-to-high" class="u-full-width button button-primary">
-          Sort Low To High
-        </button>
-        <button id="sort-high-to-low" class="u-full-width button button-primary">
-          Sort High To Low
-        </button>
-        <!-- <hr /> -->
+      <h4>Sort By Price</h4>
+      <button id="sort-low-to-high" class="u-full-width button button-primary">
+        Sort Low To High
+      </button>
+      <button id="sort-high-to-low" class="u-full-width button button-primary">
+        Sort High To Low
+      </button>
 
-        <!-- <h4>Filter Based On Salary</h4>
-          <button
-            id="filter-less-than-1L"
-            class="u-full-width button button-primary"
-          >
-            less than 1L
-          </button>
-          <button
-            id="filter-more-than-equal-1L"
-            class="u-full-width button button-primary"
-          >
-            more than or equal 1L
-          </button>
-          <hr />
+    </div>
 
+    <div class="columns eight main">
+      <div class="notifications-wrapper" id="notifications-wrapper"></div>
+      <div class="data-list-wrapper" id="data-list-wrapper">
 
-
-          <hr /> -->
-        <!-- 
-          <h4>Register User</h4>
-          <input type="text" id="register-user-username" class="u-full-width" placeholder="username" />
-          <input type="text" id="register-user-firstname" class="u-full-width" placeholder="firstname" />
-          <input type="text" id="register-user-lastname" class="u-full-width" placeholder="lastname" />
-          <input type="text" id="register-user-email" class="u-full-width" placeholder="email" />
-          <input type="password" id="register-user-passowrd" class="u-full-width" placeholder="password" />
-          <input type="text" id="register-user-avatar" class="u-full-width" placeholder="avatar image url" value="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/762.jpg"/>
-          <input type="number" id="register-user-level" class="u-full-width" placeholder="Department Number" />
-          <button id="register-user" class="u-full-width button button-primary">Register User</button>
-          <hr> -->
-
-        <!-- <h4>Log in an existing User</h4>
-          <input type="text" id="login-user-username" class="u-full-width" placeholder="username" />
-          <input type="password" id="login-user-passowrd" class="u-full-width" placeholder="password" />
-          <button id="login-user" class="u-full-width button button-primary">Login User</button>
-          <hr> -->
-
-        <!-- <button id="fetch-todos" class="u-full-width button button-primary">fetch todos</button> -->
-        <!-- <hr> -->
-
-        <!-- <h4>Update User</h4>
-          <input type="text" id="update-user-username" class="u-full-width" placeholder="username" />
-          <input type="text" id="update-user-firstname" class="u-full-width" placeholder="firstname" />
-          <input type="text" id="update-user-lastname" class="u-full-width" placeholder="lastname" />
-          <input type="text" id="update-user-email" class="u-full-width" placeholder="email" />
-          <input type="password" id="update-user-passowrd" class="u-full-width" placeholder="password" />
-          <input type="text" id="update-user-avatar" class="u-full-width" placeholder="avatar image url" value="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/762.jpg"/>
-          <input type="number" id="update-user-level" class="u-full-width" placeholder="Department Number" />
-          <button id="update-user" class="u-full-width button button-primary">Update User</button>
-          <hr> -->
-
-        <!-- <h4>Patch User Department</h4>
-          <input type="number" id="patch-user-id" class="u-full-width" placeholder="user id" />
-          <input type="text" id="patch-user-username" class="u-full-width" placeholder="username"/>
-          <input type="number" id="patch-user-level" class="u-full-width" placeholder="Department Number" />
-          <button id="patch-user" class="u-full-width button button-primary">Patch User</button>
-          <hr> -->
-      </div>
-
-      <div class="columns eight main">
-        <div class="notifications-wrapper" id="notifications-wrapper"></div>
-        <div class="data-list-wrapper" id="data-list-wrapper"></div>
-      </div>
-
-      <div class="pagination-wrapper" id="pagination-wrapper">
-        <!-- Append buttons here -->
+        <!-- Append Product Here  -->
       </div>
     </div>
+
+    <div class="pagination-wrapper" id="pagination-wrapper">
+      <!-- Append buttons here -->
+    </div>
+  </div>
   </div>
 
   <!-- <script src="./scripts/main.js" type="module"></script> -->
   <script>
-  
-    // register
-    let registerUserUsername = document.getElementById("register-user-username");
-    let registerUserFirstname = document.getElementById("register-user-firstname");
-    let registerUserLastname = document.getElementById("register-user-lastname");
-    let registerUserEmail = document.getElementById("register-user-email");
-    let registerUserPassword = document.getElementById("register-user-passowrd");
-    let registerUserAvatar = document.getElementById("register-user-avatar");
-    let registerUserLevel = document.getElementById("register-user-level");
-    let registerUserButton = document.getElementById("register-user");
 
-    // login
-    let loginUserUsername = document.getElementById("login-user-username");
-    let loginUserPassword = document.getElementById("login-user-passowrd");
-    let loginUserButton = document.getElementById("login-user");
-
-    // getTodo
-    let getTodoButton = document.getElementById("fetch-todos");
 
     let mainSection = document.getElementById("data-list-wrapper");
     let notificationWrapper = document.getElementById("notifications-wrapper");
 
-    let userAuthToken = localStorage.getItem("localAccessToken") || null;
-    let userId = +localStorage.getItem("userId") || null;
-    // const urlAllTodosOfUser = `${baseServerURL}/todos?userId=${userId}`;
-    // const urlTodosBase = `${baseServerURL}/todos/`;
 
     // cats
     let empNameInput = document.getElementById("employee-name");
@@ -258,6 +195,7 @@
 
       mainSection.innerHTML = cardList;
       editDATALinkWithId()
+      deleteData()
     }
 
     function getCard(id, title, price, linkText, linkUrl, imageUrl) {
@@ -271,7 +209,8 @@
           <div class="card__item card__description">
             ${price}
           </div>
-          <a href=${linkUrl} data-id=${id} class="card__item card__link">${linkText}</a>
+          <button href=${linkUrl} data-id=${id} class="card__item card__link">${linkText}</button>
+          <button id="Del">DELETE</button>
         </div>
       </div>
   `;
@@ -283,10 +222,43 @@
     /***************------------------ Employee FETCH on window load  -------------******************/
 
 
-    // // ***** Event listeners ***** //
-    // window.addEventListener("load", () => {
-    //   fetchAndRenderProducts();
-    // });
+    // ***** Event listeners ***** //
+    window.addEventListener("load", () => {
+      fetchAndRenderProducts();
+    });
+
+    async function fetchAndRenderProducts(pageNumber) {
+      try {
+        let res = await fetch(`http://127.0.0.1:9090/Products1?_limit=6&_page=${pageNumber}`)
+        let data = await res.json()
+        // console.log(data)
+        let productObj = data.map((item) => ({
+          id: item.id,
+          title: item.title,
+          price: `$${item.price}`,
+          linkText: "Edit",
+          // linkUrl: "https://www.google.com",
+          imageUrl: `${item.image}`
+        }));
+
+        let totalUsers = res.headers.get("X-Total-Count")
+        showPagination(totalUsers, 6)
+        productsData = data
+        renderCardList(productObj)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
+
+
+
+
+    /************--------------- fetch employees with Button CLICK  ----------**************/
+
+
+    // let fetchEmployeeData = document.getElementById("fetch-employees")
+    // fetchEmployeeData.addEventListener("click", fetchAndRenderProducts);
 
     // async function fetchAndRenderProducts(pageNumber) {
     //   try {
@@ -296,12 +268,10 @@
     //     let productObj = data.map((item) => ({
     //       id: item.id,
     //       title: item.title,
-    //       price: item.price,
+    //       price: `$${item.price}`,
     //       linkText: "Edit",
-    //       // linkUrl: "https://www.google.com",
     //       imageUrl: `${item.image}`
     //     }));
-
     //     let totalUsers = res.headers.get("X-Total-Count")
     //     showPagination(totalUsers, 10)
     //     productsData = data
@@ -310,37 +280,6 @@
     //     console.log(error)
     //   }
     // }
-
-
-
-
-
-    /************--------------- fetch employees with Button CLICK  ----------**************/
-
-
-    let fetchEmployeeData = document.getElementById("fetch-employees")
-    fetchEmployeeData.addEventListener("click", fetchAndRenderProducts);
-
-    async function fetchAndRenderProducts(pageNumber) {
-      try {
-        let res = await fetch(`http://127.0.0.1:9090/Products1?_limit=10&_page=${pageNumber}`)
-        let data = await res.json()
-        // console.log(data)
-        let productObj = data.map((item) => ({
-          id: item.id,
-          title: item.title,
-          price: `$${item.price}`,
-          linkText: "Edit",
-          imageUrl: `${item.image}`
-        }));
-        let totalUsers = res.headers.get("X-Total-Count")
-        showPagination(totalUsers, 10)
-        productsData = data
-        renderCardList(productObj)
-      } catch (error) {
-        console.log(error)
-      }
-    }
 
 
     /***************------------------ Pagination on Window Load  -------------******************/
@@ -484,6 +423,52 @@
       alert("Added")
       window.location.reload()
     }
+
+    // DELETE
+
+    function deleteData() {
+      let DeleteBtn = document.querySelectorAll("#Del");
+      // capturing all link click
+      for (let btn of DeleteBtn) {
+        btn.addEventListener("click", whenClickedDelete)
+      }
+    }
+    let globalArr = []
+
+    async function whenClickedDelete() {
+     
+      let resp = await fetch(`http://127.0.0.1:9090/Products1`)
+      let data = await resp.json()
+      globalArr = data
+      console.log(globalArr)
+
+    }
+
+    async function DeleteAfterClicked() {
+      let resp = await fetch(`http://127.0.0.1:9090/Products1/`, {
+          method: "DELETE",
+          body: JSON.stringify(),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        let out = await resp.json()
+        console.log(out)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </script>
 </body>
